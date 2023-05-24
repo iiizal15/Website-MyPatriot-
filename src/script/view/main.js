@@ -11,11 +11,11 @@ const main = () => {
     }
   };
 
-  const renderResult = results => {
+  const renderResult = (results) => {
     clubListElement.clubs = results;
   };
 
-  const fallbackResult = message => {
+  const fallbackResult = (message) => {
     clubListElement.renderError(message);
   };
 
