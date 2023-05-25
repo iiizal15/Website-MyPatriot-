@@ -21,6 +21,7 @@
   "homepage": "https://github.com/iiizal15/Website-MyPatriot-#readme",
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
     "babel-loader": "^8.2.5",
@@ -48,6 +49,8 @@
   "devDependencies": {
     "regenerator-runtime": "^0.13.9"
 =======
+=======
+>>>>>>> patriot
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
     "babel-loader": "^9.1.2",
@@ -60,6 +63,9 @@
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0",
     "webpack-merge": "^5.9.0"
+<<<<<<< HEAD
 >>>>>>> detail-patriot
+=======
+>>>>>>> patriot
   }
 }
