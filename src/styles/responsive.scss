@@ -15,7 +15,7 @@
     position: fixed;
     flex-direction: column;
     transform: translateX(100%);
-    background-image: linear-gradient(to right top, #8b7e74, #9b8d7f, #aa9c8a, #b9ac95, #c7bca1);
+    background-color: #b09b71;
     z-index: 50;
     transition: all 0.3s ease-in-out;
   }
@@ -37,5 +37,26 @@
 @media (max-width: 30em) {
   .container h1 a {
     font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .jumbo {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .jumbotron {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .image-jumbo {
+    flex: 1;
+    margin-right: 80px;
+    margin-top: 220px;
+    margin-bottom: 250px;
+    text-align: right;
   }
 }

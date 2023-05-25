@@ -94,49 +94,39 @@ header h1 span {
  */
 
 .hero {
-  background-image: url('../public/images/heros/hero-image_2.jpg');
-  width: 100%; /* Set full-width by default */
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-size: cover;
+  background: #eddfb3;
   min-height: 500px;
   color: #fff;
+}
+
+.jumbo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.jumbotron {
+  color: #333333;
+  text-align: left;
+  margin-top: 150px;
+  margin-bottom: 250px;
+  text-align: justify;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+}
+
+.image-jumbo {
   text-align: center;
 }
 
-.hero__caption {
-  text-shadow: 5px 1px black;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 2rem;
-  margin-bottom: 8rem;
-}
-
-.hero__caption span {
-  color: gold;
-}
-
-.hero::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.hero h2 {
-  font-family: 'Poppins', sans-serif;
-  font-style: italic;
-  font-size: 60px;
-  font-weight: 800;
-  color: #da291c;
+.image-jumbo img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -158,7 +148,7 @@ section {
  */
 
 .explore__container {
-  background-image: linear-gradient(to right top, #8b7e74, #9b8d7f, #aa9c8a, #b9ac95, #c7bca1);
+  background-color: #b09b71;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
