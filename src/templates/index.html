@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Find your National Hero!" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css" />
     <link
@@ -14,26 +15,26 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>RestaurantQue</title>
+    <title>My Patriot</title>
   </head>
   <body>
     <a href="#maincontent" class="skip-link">Menuju ke konten</a>
     <!-- Header Resto -->
     <header class="header">
-      <div class="header__inner">
-        <h1 class="header__title">Restaurant<span>Que</span></h1>
+      <button id="skip-to-content" tabindex="1" class="skip-to-content" href="#content">Menuju ke konten</button>
+      <div class="container">
+        <h1>
+          <a href="/">My<span>Patriot</span></a>
+        </h1>
+        <button class="menu">☰</button>
+        <div class="navbar">
+          <a href="#">HOME</a>
+          <a href="#">PATRIOT</a>
+          <a href="https://www.linkedin.com/in/fahrizal-amri-bachtiar-955647242/">ABOUT US</a>
+          <a href="#">CONTACT US</a>
+        </div>
       </div>
-      <a href="#" id="menu" class="header__menu">☰</a>
     </header>
-
-    <!-- Navigation Bar -->
-    <nav id="drawer" class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="/">Home</a></li>
-        <li class="nav__item"><a href="#">Favorite</a></li>
-        <li class="nav__item"><a href="https://www.linkedin.com/in/fahrizal-amri-bachtiar-955647242/">About Us</a></li>
-      </ul>
-    </nav>
 
     <!-- Hero Element -->
     <div class="hero">
@@ -41,118 +42,20 @@
     </div>
 
     <!-- Main Content -->
-    <main id="maincontent">
-      <section class="content">
+    <main>
+      <div id="content">
         <!-- Explore Restoran -->
         <div class="explore">
-          <div class="container">
+          <div class="explore__container">
             <p><span>Explore</span> Your Favorite <span>Restaurant</span></p>
           </div>
         </div>
-
-        <!-- Daftar Restoran -->
-        <div class="restaurants">
-          <article class="restaurant">
-            <img class="restaurant__image" src="https://restaurant-api.dicoding.dev/images/medium/41" alt="Restoran 1" />
-            <div class="restaurant__info">
-              <h2 class="restaurant__name">Bring Your Phone Cafe</h2>
-              <h3 class="restaurant__city">Medan</h3>
-              <h3 class="restaurant__rating">Rating: <span>4.6</span></h3>
-              <p class="restaurant__description">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-                pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-                viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-              </p>
-            </div>
-          </article>
-
-          <article class="restaurant">
-            <img class="restaurant__image" src="https://restaurant-api.dicoding.dev/images/medium/07" alt="Restoran 2" />
-            <div class="restaurant__info">
-              <h2 class="restaurant__name">Run The Gun</h2>
-              <h3 class="restaurant__city">Bali</h3>
-              <h3 class="restaurant__rating">Rating: <span>4.6</span></h3>
-              <p class="restaurant__description">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-                pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-                viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-              </p>
-            </div>
-          </article>
-
-          <article class="restaurant">
-            <img class="restaurant__image" src="https://restaurant-api.dicoding.dev/images/medium/29" alt="Restoran 3" />
-            <div class="restaurant__info">
-              <h2 class="restaurant__name">Pangsit Express</h2>
-              <h3 class="restaurant__city">Ternate</h3>
-              <h3 class="restaurant__rating">Rating: <span>4.8</span></h3>
-              <p class="restaurant__description">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-                pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-                viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-              </p>
-            </div>
-          </article>
-
-          <article class="restaurant">
-            <img class="restaurant__image" src="https://restaurant-api.dicoding.dev/images/medium/38" alt="Restoran 4" />
-            <div class="restaurant__info">
-              <h2 class="restaurant__name">Ducky Duck</h2>
-              <h3 class="restaurant__city">Malang</h3>
-              <h3 class="restaurant__rating">Rating: <span>4.7</span></h3>
-              <p class="restaurant__description">
-                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-                truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-                extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
-                pleasure.
-              </p>
-            </div>
-          </article>
-
-          <article class="restaurant">
-            <img class="restaurant__image" src="https://restaurant-api.dicoding.dev/images/medium/40" alt="Restoran 5" />
-            <div class="restaurant__info">
-              <h2 class="restaurant__name">Kafein</h2>
-              <h3 class="restaurant__city">Bali</h3>
-              <h3 class="restaurant__rating">Rating: <span>3.8</span></h3>
-              <p class="restaurant__description">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-                pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-                viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-              </p>
-            </div>
-          </article>
-
-          <article class="restaurant">
-            <img class="restaurant__image" src="https://restaurant-api.dicoding.dev/images/medium/08" alt="Restoran 6" />
-            <div class="restaurant__info">
-              <h2 class="restaurant__name">Makan Mudah</h2>
-              <h3 class="restaurant__city">Malang</h3>
-              <h3 class="restaurant__rating">Rating: <span>4.6</span></h3>
-              <p class="restaurant__description">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-                pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-                viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
+      </div>
     </main>
 
     <!-- Start Footer -->
     <footer>
-      <div class="icons">
-        <a href="https://github.com/iiizal15"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/fahrizal-amri-bachtiar-955647242/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://instagram.com/iiizal?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <p>&copy; 2023 - RestaurantQue</p>
+      <p>&copy; 2023 - My Patriot</p>
     </footer>
 
     <!-- Script -->

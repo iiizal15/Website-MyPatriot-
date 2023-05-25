@@ -1,118 +1,41 @@
-.restaurants {
-  display: grid;
-  grid-row-gap: 16px;
-}
+@media (max-width: 47em) {
+  .menu {
+    display: block;
+    z-index: 100;
+  }
 
-@media screen and (max-width: 499px) {
-  .nav {
-    z-index: 10;
+  .navbar {
     width: 100%;
-    position: absolute;
-    top: -30%;
-
-    /* This transform moves the drawer off canvas. */
-    -webkit-transform: translate(0, -20%);
-    transform: translate(0, -20%);
-
-    /* Optionally, we animate the drawer. */
-    transition: transform 0.3s ease;
+    height: 50%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    flex-direction: column;
+    transform: translateX(100%);
+    background-image: linear-gradient(to right top, #8b7e74, #9b8d7f, #aa9c8a, #b9ac95, #c7bca1);
+    z-index: 50;
+    transition: all 0.3s ease-in-out;
   }
 
   .open {
-    -webkit-transform: translate(0, auto);
-    transform: translate(0, 0);
-    top: auto;
+    transform: translateX(0);
+    visibility: visible;
   }
 
-  .nav__item {
-    display: list-item;
-    border-bottom: 1px solid #e0e0e0;
-    width: 100%;
-    text-align: left;
+  .menus {
+    flex-direction: column;
+  }
+
+  .menus div {
+    margin-bottom: 1rem;
   }
 }
 
-@media screen and (min-width: 200px) {
-  .restaurant__rating {
-    padding: 5px 2px 5px 32px;
-  }
-
-  .restaurant__rating span {
-    padding: 4px 4px;
-  }
-
-  .restaurant__description {
-    padding: 16px 32px 32px 32px;
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .header__menu {
-    display: none;
-  }
-
-  .nav {
-    justify-content: space-between;
-  }
-
-  .nav__list {
-    max-width: 800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .restaurant__info {
-    padding: 0 0 32px;
-  }
-
-  .restaurant__name {
-    font-size: 18px;
-  }
-
-  .restaurant__rating {
-    padding: 5px 2px 5px 32px;
-  }
-
-  .restaurant__rating span {
-    padding: 4px 4px;
-  }
-
-  .restaurant__description {
-    padding: 16px 32px 32px 32px;
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .restaurants {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 16px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .restaurants {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  main {
-    max-width: 1200px;
-  }
-  .hero {
-    min-width: 1000px; /*Set minimal width of 1000px */
-    width: auto;
-    background-size: cover;
-    text-align: center;
+@media (max-width: 30em) {
+  .container h1 a {
+    font-size: 32px;
   }
 }
