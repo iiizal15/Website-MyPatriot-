@@ -1,0 +1,374 @@
+@media only screen and (min-width: 320px) and (max-width: 675px) {
+  /* .hero-container {
+    background: url('../public/images/heros/banner.jpg');
+  } */
+  .image-jumbo {
+    /* background: url('../public/images/heros/hero1.png'); */
+    flex: 1;
+    margin-right: 80px;
+    margin-top: 220px;
+    margin-bottom: 210px;
+    text-align: center;
+  }
+  nav {
+    padding: 0 100px;
+  }
+}
+/* .main-karunia_restaurants {
+    padding: 0 100px;
+  }
+  .list-karunia-restaurants {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 1em;
+  }
+}
+.restaurant-detail__info,
+.karunia-detail__menu-list,
+.restaurant-detail__review {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  gap: 50px;
+  margin: 0 auto;
+}
+.detail-review {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.karunia-item_image-container {
+  max-width: 810px;
+} */
+
+@media only screen and (min-width: 412px) and (max-width: 675px) {
+  /* .hero-container {
+    background: url('../public/images/heros/banner.jpg');
+  } */
+  .image-jumbo {
+    /* background: url('../public/images/heros/hero1.png'); */
+    flex: 1;
+    margin-right: 80px;
+    margin-top: 220px;
+    margin-bottom: 210px;
+    text-align: center;
+  }
+  nav {
+    padding: 0 100px;
+  }
+}
+/* .main-karunia_restaurants {
+    padding: 0 100px;
+  }
+  .list-karunia-restaurants {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 1em;
+  }
+}
+.restaurant-detail__info,
+.karunia-detail__menu-list,
+.restaurant-detail__review {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  gap: 50px;
+  margin: 0 auto;
+}
+.detail-review {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.karunia-item_image-container {
+  max-width: 810px;
+} */
+
+@media only screen and (max-width: 767px) {
+  /* .hero-container {
+    background: url('../public/images/heros/banner.jpg');
+  } */
+  .image-jumbo {
+    /* background: url('../public/images/heros/hero1.png'); */
+    flex: 1;
+    margin-right: 80px;
+    margin-top: 220px;
+    margin-bottom: 210px;
+    text-align: center;
+  }
+  header {
+    padding: 0.5rem;
+  }
+  .nav-container {
+    display: block;
+  }
+  /* .brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px;
+  } */
+  .nav__menu ul {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_menu {
+    font-size: 19px;
+    display: block;
+  }
+  .nav__menu {
+    justify-content: start;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  /* .main-karunia_restaurants {
+    padding: 25px 20px;
+  } */
+  .hero-content-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .skipcontent {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  /* .hero-container {
+    background: url('../public/images/heros/banner.jpg');
+  } */
+  .image-jumbo {
+    /* background: url('../public/images/heros/hero1.png'); */
+    flex: 1;
+    margin-right: 80px;
+    margin-top: 220px;
+    margin-bottom: 210px;
+    text-align: center;
+  }
+  .header_menu {
+    display: none;
+  }
+  section {
+    margin-bottom: 80px;
+  }
+
+  /* .karunia-main-label {
+    font-size: 26px;
+  }
+
+  .list-karunia-restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .karunia-item_name {
+    font-size: 22px;
+  }
+  .main-karunia_restaurants {
+    padding: 0 30px;
+  } */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* .hero-container {
+    background: url('../public/images/heros/banner.jpg');
+  } */
+  .image-jumbo {
+    /* background: url('../public/images/heros/hero1.png'); */
+    flex: 1;
+    margin-right: 80px;
+    margin-top: 220px;
+    margin-bottom: 200px;
+    text-align: center;
+  }
+  nav {
+    padding: 0 100px;
+  }
+  /* .main-karunia_restaurants {
+    padding: 0 100px;
+  }
+  .list-karunia-restaurants {
+    grid-template-columns: 1fr 1fr 1fr;
+  } */
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 1em;
+  }
+}
+/* }
+.restaurant-detail__info,
+.karunia-detail__menu-list,
+.restaurant-detail__review {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  gap: 50px;
+  margin: 0 auto;
+}
+.detail-review {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.karunia-item_image-container {
+  max-width: 810px;
+} */
+
+@media only screen and (min-width: 1024px) {
+  /* .hero-container {
+    background: url('../public/images/heros/banner.jpg');
+  } */
+  .image-jumbo {
+    /* background: url('../public/images/heros/hero1.png'); */
+    flex: 1;
+    margin-right: 80px;
+    margin-top: 220px;
+    margin-bottom: 200px;
+    text-align: center;
+  }
+  nav {
+    padding: 0 100px;
+  }
+  /* .main-karunia_restaurants {
+    padding: 0 100px;
+  }
+  .list-karunia-restaurants {
+    grid-template-columns: 1fr 1fr 1fr;
+  } */
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 1em;
+  }
+}
+/* .restaurant-detail__info,
+.karunia-detail__menu-list,
+.restaurant-detail__review {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  gap: 50px;
+  margin: 0 auto;
+}
+.detail-review {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.karunia-item_image-container {
+  max-width: 810px;
+} */
+
+@media screen and (max-width: 600px) {
+  .patriot-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* .jumbo {
+    flex-direction: row;
+    align-items: flex-start;
+  } */
+  .hero-content-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .jumbotron {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .image-jumbo {
+    flex: 1;
+    margin-right: 80px;
+    margin-top: 220px;
+    margin-bottom: 210px;
+    text-align: center;
+  }
+
+  .article1 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .article1__desc {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .article1__image {
+    flex: 1;
+    margin-right: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .article2 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .article2__desc {
+    flex: 1;
+    margin: auto;
+  }
+
+  .article2__image {
+    flex: 1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .article3 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .article3__desc {
+    flex: 1;
+  }
+
+  .article3__image {
+    flex: 1;
+    margin-right: 80px;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    text-align: center;
+  }
+
+  .article4 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .article4__desc {
+    flex: 1;
+    margin: auto;
+  }
+
+  .article4__image {
+    flex: 1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
