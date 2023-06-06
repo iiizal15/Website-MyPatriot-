@@ -4,6 +4,9 @@
       width: 100%;
       margin-top: -18%;
     }
+    .card{
+      min-width: 350px;
+    }
     .detail-image img{
       width:320px !important ;
     }
@@ -93,6 +96,20 @@
     width: 100%;
     margin-top: -35%;
   }
+
+  .card{
+    height: 550px;
+  }
+
+  .card dt{
+    width: 40%;
+    font-size: .9rem;
+  }
+  .card dd{
+    font-size: .9rem;
+    width: 60%;
+  }
+
   .detail-image{
     text-align: center;
   }

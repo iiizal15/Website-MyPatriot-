@@ -1,77 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Find your National Hero!" />
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Patriot</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
   </head>
   <body>
-    <!-- Header Resto -->
-    <header class="header">
-      <button id="skip-to-content" tabindex="0" class="skip-to-content" href="#content">Menuju ke konten</button>
+    <a href="#mainContent" tabindex="0" class="skip-link">Menuju ke konten <i class="bi bi-arrow-right"></i></a>
+    <nav class="navbar navbar-expand-lg py-3 ">
       <div class="container">
-        <h1>
-          <a href="/">My<span>Patriot</span></a>
-        </h1>
-        <button class="menu">☰</button>
-        <div class="navbar">
-          <a href="#">HOME</a>
-          <a href="#">PATRIOT</a>
-          <a href="https://www.linkedin.com/in/fahrizal-amri-bachtiar-955647242/">ABOUT US</a>
-          <a href="#">CONTACT US</a>
+        <a class="navbar-brand " href="#">
+          <img src="./img/logo.png" alt="Logo My Patriot" width="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" id="hamburger" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navigationDrawer">
+            <li class="nav-item">
+              <a class="nav-link " href="#/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#/patriot">Patriot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Contact</a>
+            </li>
         </div>
       </div>
-    </header>
-
-    <!-- Hero Element -->
-    <!-- <div class="hero">
-      <div class="hero__caption">Find a <span>Restaurant</span> According to Your <span>Stomach's Desire</span></div>
-    </div> -->
-    <div class="hero">
-      <div class="jumbo">
-        <div class="jumbotron">
-          <h1>My Patriot</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Orci ullamcorper sit semper sagittis elementum in ac. Sollicitudin nisl fermentum est nibh turpis id pellentesque commodo. Non metus vitae mi lacus in egestas habitant. Urna enim sapien
-            eget purus potenti id nisi mattis.
-          </p>
-        </div>
-        <div class="image-jumbo">
-          <img src="src/public/img/heros/hero1.png" alt="Gambar Jumbotron" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Main Content -->
-    <main>
-      <div id="content">
-        <!-- Explore Restoran -->
-        <div class="explore">
-          <div class="explore__container">
-            <p><span>Pentingnya </span>Mengenal <span> Pahlawan</span></p>
+    </nav>
+    <!-- <header>
+      <div class="jumbotron">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-around align-items-center">
+            <div class="jumbotron-description">
+              <h1>MY PATRIOT</h1>
+              <p>Ciptakan Rasa Nasionalisme Dengan Menghargai Para Pahlawan</p>
+            </div>
+            <div class="jumbotron-image">
+              <img src="./img/heros/hero1.png" alt="">
+            </div>
           </div>
         </div>
       </div>
+    </header> -->
+    <main id="mainContent" tabindex="0">
+
     </main>
-
-    <!-- Start Footer -->
-    <footer>
-      <p>&copy; 2023 - My Patriot</p>
-    </footer>
-
-    <!-- Script -->
-    <script src="./src/scripts/index.js"></script>
   </body>
 </html>
