@@ -188,7 +188,7 @@ img {
 }
 
 .image-jumbo {
-  min-width: 200px;
+  min-width: 100px;
   min-height: 150px;
   text-align: center;
 }
@@ -199,7 +199,7 @@ img {
 }
 
 /*
- * Main Section
+ * Main Section: Explore & Articles
  */
 
 /*
@@ -415,7 +415,7 @@ footer {
  * Main tegar resto
  */
 
-.main-karunia_restaurants {
+/* .main-karunia_restaurants {
   margin: 60px auto;
 }
 
@@ -612,11 +612,11 @@ footer {
 .customreview-card__button:focus {
   outline: none;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-}
+} */
 
 /* Detail resto  */
 
-.restaurant {
+/* .restaurant {
   width: 100%;
 }
 
@@ -891,4 +891,4 @@ input[type='checkbox'] {
 .food-checkbox {
   min-width: 44px;
   min-height: 44px;
-}
+} */

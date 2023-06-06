@@ -12,13 +12,13 @@ exports.config = {
   output: 'e2e/outputs',
   helpers: {
     Puppeteer: {
-      url: ' http://127.0.0.1:9000',
+      url: ' http://127.0.0.1:9900',
       show: true,
-      windowSize: '1200x900'
-    }
+      windowSize: '1200x900',
+    },
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
   },
-  name: 'karunia-restaurant  PWA + Testing dan Optimized'
-}
+  name: 'mypatriot',
+};
