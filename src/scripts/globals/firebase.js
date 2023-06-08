@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref } from "firebase/database";
+import {  getDatabase, ref } from "firebase/database";
 
 import CONFIG from "./config";
 
@@ -10,6 +10,7 @@ class Firebase {
         const patriotDb = ref(db, 'Mypetriot/' + '/Pahlawan');
         return patriotDb;
     }
+
 }
 
 export default Firebase;

@@ -1,14 +1,14 @@
 const createCardPatriotTemplate = (id, data) => {
     return `
-    <div class="card col-sm-9 col-md-5 col-lg-3 flex-grow-2">
+    <div class="card col-sm-9 col-md-5 col-lg-3 flex-grow-2 position-relative">
         <div class="card-header text-center border-0 pt-3">
             <h5 class="card-title fw-bold" tabindex="0">${data.nama}</h5>
             <h6 class="card-gelar" tabindex="0">${data.gelar_pahlawan}</h6>
         </div>
         <div class=" d-flex mx-auto justify-content-center py-3 border-top border-bottom border-dark">
-            <img src="${data.gambar}" class="card-img-top img-fluid" alt="Gambar ${data.nama}" width="140" >
+            <img src="${data.gambar}" class="img-fluid" alt="Gambar ${data.nama}" width="140" >
         </div>
-        <div class="card-body position-relative">
+        <div class="card-body ">
             <dl class="row px-2">
                 <dt class="col-xs-3 col-sm-3 col-md-4 font-card-left text-dark-emphasis ">Asal Daerah</dt>
                 <dd class="col-sm-9 col-md-8 text-truncate font-card-right text-dark-emphasis">: ${data.asal_daerah}</dd>
@@ -21,10 +21,10 @@ const createCardPatriotTemplate = (id, data) => {
                 <dt class="col-xs-3 col-sm-3 col-md-4 font-card-left text-dark-emphasis">Kategori Pahlawan</dt>
                 <dd class="col-sm-9 col-md-8 text-truncate font-card-right text-dark-emphasis">: ${data.kategori}</dd>
             </dl>
-            <div class="wrapper-btn-detail">
-                <a href="#/detail-patriot/${id}" class="btn w-100 btn-detail " tabindex="0">Detail</a>
             </div>
-      </div>
+            <div class="wrapper-btn-detail">
+                <a href="#/detail-patriot/${id}" class="btn w-100 btn-detail justify-content-center" tabindex="0">Detail</a>
+            </div>
     </div>
     `
 }; 
@@ -70,9 +70,45 @@ const createDetailPatriotTemplate = (data) => {
     `
 }
 
+const createSkeletonCardPatriot = (count) => {
+    let template = '';
+    for(let i = 0; i < count; i++){
+        template += `
+        <div class="card col-sm-9 col-md-5 col-lg-3 flex-grow-2 position-relative ">
+        <div class="card-header text-center border-0 pt-3 ">
+            <h5 class="card-title fw-bold skeleton" tabindex="0"> Lorem ipsum dolor sit amet.</h5>
+            <h6 class="card-gelar skeleton" tabindex="0">Lorem, ipsum dolor.</h6>
+        </div>
+        <div class=" d-flex mx-auto justify-content-center py-3 border-top border-bottom border-dark">
+            <img src="" class="img-fluid skeleton" alt="Gambar " width="140" >
+        </div>
+        <div class="card-body ">
+            <dl class="row px-2 skeleton">
+                <dt class="col-xs-3 col-sm-3 col-md-4 font-card-left text-dark-emphasis ">Asal Daerah</dt>
+                <dd class="col-sm-9 col-md-8 text-truncate font-card-right text-dark-emphasis ">: Lorem ipsum dolor sit amet.</dd>
+                <dt class="col-xs-3 col-sm-3 col-md-4 font-card-left text-dark-emphasis ">Lahir</dt>
+                <dd class="col-sm-9 col-md-8 text-truncate font-card-right text-dark-emphasis ">: </dd>
+                <dt class="col-xs-3 col-sm-3 col-md-4 font-card-left text-dark-emphasis ">Makam</dt>
+                <dd class="col-sm-9 col-md-8 text-truncate font-card-right text-dark-emphasis " >:</dd>
+                <dt class="col-xs-3 col-sm-3 col-md-4 font-card-left text-dark-emphasis ">Gugur</dt>
+                <dd class="col-sm-9 col-md-8 text-truncate font-card-right text-dark-emphasis ">: </dd>
+                <dt class="col-xs-3 col-sm-3 col-md-4 font-card-left text-dark-emphasis ">Kategori Pahlawan</dt>
+                <dd class="col-sm-9 col-md-8 text-truncate font-card-right text-dark-emphasis ">: </dd>
+            </dl>
+            </div>
+            <div class="wrapper-btn-detail skeleton">
+                <a href="#/detail-patriot/" class="btn w-100 btn-detail justify-content-center" tabindex="0">Detail</a>
+            </div>
+    </div>
+        `
+    }
+
+    return template;
+}
 
 
 export{ 
     createCardPatriotTemplate,
     createDetailPatriotTemplate,
+    createSkeletonCardPatriot
 };

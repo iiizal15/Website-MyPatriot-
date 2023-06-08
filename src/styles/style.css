@@ -9,7 +9,7 @@
   }
   
   main {
-    width: 90%;
+    width: 100%;
     margin: 32px auto;
   }
   
@@ -56,7 +56,7 @@
     background-image: url('../public/svg/wave-patriot-1.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -18%;
+    margin-top: -20%;
     object-fit: contain;
     object-position: center;
   }
@@ -71,7 +71,7 @@
   }
 
   .card{
-    height: 600px;
+    min-height: 600px;
     min-width: 320px;
   }
 
@@ -93,11 +93,10 @@
     font-size: .97rem;
   }
   .wrapper-btn-detail{
-    position: absolute;
-    padding-right: 30px;
-    padding-block: 20px;
+    padding-inline: 20px !important;
     width: 100%;
-    bottom: 0;
+    bottom: 0 !important;
+    transform: translate(0,-40%) !important;
   }
   .btn-detail{
     background-color: #B09B71 ;
@@ -139,4 +138,31 @@
     background-color: #B09B71;
   }  
 
+  .skeleton{
+    position: relative;
+    user-select: none;
+  }
+  .skeleton::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    z-index: 99;
+    background: linear-gradient(90deg, #eee, #f9f9f9, #eee);
+    background-size: 200%;
+    animation: skeleton 1s infinite reverse ;
+  }
+  
+  @keyframes skeleton {
+    0%{
+      background-position: -100% 0;
+    }
+    100%{
+      background-position: 100% 0;
+    }
+  }
+  
   

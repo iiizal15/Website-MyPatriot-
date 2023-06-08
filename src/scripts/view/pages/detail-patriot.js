@@ -20,15 +20,15 @@ const DetailPatriot = {
         const url = UrlParser.parseActiveUrlWithoutCombiner();
         const patriotId = url.id.toLowerCase();
         const patriotDb = Firebase.initializeFirebase();
-        document.addEventListener('load', () => {
-            headerPatriot.style.visibility= 'hidden';
+        document.addEventListener('change', () => {
+            headerPatriot.style.display= 'none';
         });
         onValue(patriotDb, (snapshot) => {
             snapshot.forEach(function(element){
                 const id = element.key.toLowerCase();
                 const data = element.val();
                 if(id !== patriotId) return;
-                detailContentContainter.innerHTML = createDetailPatriotTemplate(data)
+                detailContentContainter.innerHTML += createDetailPatriotTemplate(data)
             });
         });
 
