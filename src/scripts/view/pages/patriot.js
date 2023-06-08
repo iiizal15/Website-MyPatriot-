@@ -81,10 +81,10 @@ const Patriot = {
         });
 
         // handle filter
-        const cardItems = document.querySelectorAll('.card');
 
         // gelar pahlawan
         filterGelarPahlawan.addEventListener('change', () => {
+            const cardItems = document.querySelectorAll('.card');
             const choose = filterGelarPahlawan.options[filterGelarPahlawan.selectedIndex].value;
             for(let i = 0; i < cardItems.length; i++){
                 const cardGelar = cardItems[i].getElementsByTagName('h6')[0];
@@ -102,6 +102,7 @@ const Patriot = {
 
         // handle kategori pahlawan
         filterKategoriPahlawan.addEventListener('change', () => {
+            const cardItems = document.querySelectorAll('.card');
             const choose = filterKategoriPahlawan.options[filterKategoriPahlawan.selectedIndex].value;
             for(let i = 0; i < cardItems.length; i++){
                 const cardKategori = cardItems[i].getElementsByTagName('dd')[4];
