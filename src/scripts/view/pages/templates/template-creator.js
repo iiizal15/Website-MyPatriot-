@@ -31,13 +31,13 @@ const createCardPatriotTemplate = (id, data) => {
 
 const createDetailPatriotTemplate = (data) => {
     return `
-    <div class="col-sm-6 col-md-12 col-lg-12 detail-box rounded-5 p-4">
-    <div class="row p-3">
-        <div class="d-flex px-3 justify-content-center detail-content">
-            <div class="col-sm col-md-5 col-lg-4 px-2 detail-image ">
-                <img src="${data.gambar}"  alt="${data.nama}" class="img-fluid ">
+    <div class="col-sm-6 col-md-12 col-lg-12 detail-box rounded-5 py-4">
+    <div class="row px-3">
+        <div class="d-flex detail-content">
+            <div class="col-sm col-md-5 col-lg-4 detail-image ">
+                <img src="${data.gambar}"  alt="${data.nama}" class="img-fluid rounded" width="350">
             </div>
-            <div class="col-sm-12 col-md-7 col-lg ps-3 detail-header  ">
+            <div class="col-sm col-md-6 col-lg detail-header mx-4">
                 <h1 class="text-center fw-bold text-dark-emphasis">${data.nama}</h1>
                 <h3 class="text-center fw-semibold text-dark-emphasis">${data.gelar_pahlawan}</h3>
 
@@ -101,6 +101,51 @@ const createSkeletonCardPatriot = (count) => {
             </div>
     </div>
         `
+}
+    return template;
+}
+
+const createSkeletonDetailPatriotTemplate = (count) => {
+    let template = '';
+    for(let i = 0; i < count; i++){
+        template += `
+        <div class="col-sm-6 col-md-12 col-lg-12 detail-box rounded-5 p-4">
+        <div class="row p-3">
+            <div class="d-flex px-3 justify-content-center detail-content">
+                <div class="col-sm col-md-5 col-lg-4 px-2 detail-image  skeleton ">
+                    <img src="" class="img-fluid " alt="Gambar "  >
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg ps-3 detail-header  ">
+                    <h1 class="text-center fw-bold text-dark-emphasis skeleton">Lorem ipsum dolor sit amet.</h1>
+                    <h3 class="text-center fw-semibold text-dark-emphasis skeleton">Lorem, ipsum dolor.</h3>
+    
+                    <dl class="row text-dark-emphasis pt-4 skeleton">
+                        <dt class="col-sm-4  col-md-4">Asal Daerah</dt>
+                        <dd class="col-sm-8  col-md-8 col-lg-8 ">: </dd>
+                      
+                        <dt class="col-sm-4  col-md-4">Lahir</dt>
+                        <dd class="col-sm-8  col-md-8 col-lg-8 ">: </dd>
+                      
+                        <dt class="col-sm-4  col-md-4">Gugur</dt>
+                        <dd class="col-sm-8  col-md-8 col-lg-8 ">: </dd>
+                      
+                        <dt class="col-sm-4  col-md-4 ">Makam</dt>
+                        <dd class="col-sm-8  col-md-8 col-lg-8 ">: </dd>
+                        <dt class="col-sm-4  col-md-4 ">Bidang</dt>
+                        <dd class="col-sm-8  col-md-8 col-lg-8 kategori">: </dd>
+                      
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2 ">
+            <div class="col-sm-12 col-md-9 col-lg-9 detail-description px-4 skeleton ">
+                <h3 class="fw-semibold text-dark-emphasis">Deskripsi</h3>
+                <p class="lh-base"></p>
+            </div>
+        </div>
+    </div>
+        `
     }
 
     return template;
@@ -110,5 +155,6 @@ const createSkeletonCardPatriot = (count) => {
 export{ 
     createCardPatriotTemplate,
     createDetailPatriotTemplate,
-    createSkeletonCardPatriot
+    createSkeletonCardPatriot,
+    createSkeletonDetailPatriotTemplate
 };

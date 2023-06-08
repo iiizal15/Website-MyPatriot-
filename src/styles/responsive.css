@@ -33,6 +33,7 @@
     width: 100%;
     margin-top: -40%;
   }
+  
   .detail-image img{
     width: 300px !important;
   }
@@ -62,6 +63,7 @@
     width: 100%;
     margin-top: -30%;
   }
+  
   .detail-box{
     width: 100%;
   }
@@ -70,9 +72,6 @@
   }
   .detail-image img{
     width: 320px;
-  }
-  .detail-content{
-    display: block !important;
   }
   .detail-header{
     margin-top: 15px;
@@ -109,15 +108,12 @@
     font-size: .9rem;
     width: 60%;
   }
-
+ 
   .detail-image{
     text-align: center;
   }
   .detail-image img{
     width: 320px;
-  }
-  .detail-content{
-    display: block !important;
   }
   .detail-header{
     margin-top: 15px;
@@ -128,7 +124,9 @@
   .detail-header h3{
     font-size: 1rem;
   }
-  
+  .detail-content{
+    display: block !important;
+  }
   .detail-header dl{
     display: flex;
     justify-content: flex-start; 

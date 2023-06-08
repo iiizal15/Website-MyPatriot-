@@ -1,5 +1,5 @@
 import { async } from "regenerator-runtime";
-import { createDetailPatriotTemplate } from "./templates/template-creator";
+import { createDetailPatriotTemplate, createSkeletonDetailPatriotTemplate } from "./templates/template-creator";
 import Firebase from "../../globals/firebase";
 import { onValue } from "firebase/database";
 import UrlParser from "../../routes/url-parser";
@@ -8,22 +8,20 @@ const DetailPatriot = {
     async render(){
         return `
         <div class="container ">
-            <div class="row " id="detail-content">
+            <div class="row px-3" id="detail-content">
+            ${createSkeletonDetailPatriotTemplate(1)}
             </div>
         </div>
         `;
     },
 
     async afterRender(){
-        const headerPatriot = document.getElementById('patriot-header');
         const detailContentContainter = document.querySelector('#detail-content');
         const url = UrlParser.parseActiveUrlWithoutCombiner();
         const patriotId = url.id.toLowerCase();
         const patriotDb = Firebase.initializeFirebase();
-        document.addEventListener('change', () => {
-            headerPatriot.style.display= 'none';
-        });
         onValue(patriotDb, (snapshot) => {
+            detailContentContainter.innerHTML = '';
             snapshot.forEach(function(element){
                 const id = element.key.toLowerCase();
                 const data = element.val();

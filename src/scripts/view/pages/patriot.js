@@ -1,7 +1,7 @@
-import { keys } from "regenerator-runtime";
 import {createCardPatriotTemplate, createSkeletonCardPatriot} from './templates/template-creator'
 import { onValue} from "firebase/database";
 import Firebase from "../../globals/firebase";
+
 
 const Patriot = {
     async render(){
@@ -40,7 +40,9 @@ const Patriot = {
             <div class="gap-3 d-flex justify-content-center flex-wrap " id="contents">
                 ${createSkeletonCardPatriot(20)}
             </div>
-            <div class="pagination"></div>
+            <div class="pagination">
+
+            </div>
         </div>
         `
     },
@@ -117,8 +119,6 @@ const Patriot = {
             }
         });
 
-        // handle paginate
-        
     },
 }
 
