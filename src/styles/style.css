@@ -100,11 +100,9 @@
   }
   .btn-detail{
     background-color: #B09B71 ;
-    color: white;
   }
   .btn-detail:hover{
     background-color: #978560 ;
-    color: white;
   }
 
   .btn-back-to-top{
@@ -164,5 +162,22 @@
       background-position: 100% 0;
     }
   }
+
+  .moveUp {
+    margin-left: 20px;
+    padding: 11px 13.5px;
+    position: fixed;
+    bottom: 50px;
+    right: 75px;
+    z-index: 99;
+    background-color: #978560;
+    color: white;
+    border-radius: 20%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    border: none !important;
+ }
   
   

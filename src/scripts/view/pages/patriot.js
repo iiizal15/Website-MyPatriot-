@@ -12,7 +12,7 @@ const Patriot = {
                 <div class="col-xs-12 col-sm-9 col-md-8 col-lg-5 search">
                     <form class="d-flex" role="search">
                         <input class="form-control py-3 px-4 border-0 shadow-none" type="text" placeholder="Cari..." aria-label="Cari..." tabindex="0" id="search">
-                        <button class="btn border-0 btn-search ps-4 pe-4 px-md-5 px-lg-4 px-xl-5" type="submit" tabindex="0" id="btn-search"><i class="bi bi-search text-white " ></i></button>
+                        <button class="btn border-0 btn-search ps-4 pe-4 px-md-5 px-lg-4 px-xl-5" type="submit" tabindex="0" id="btn-search" aria-label="button search"><i class="bi bi-search text-white " ></i></button>
                     </form>
                 </div>
             </div>
@@ -40,8 +40,10 @@ const Patriot = {
             <div class="gap-3 d-flex justify-content-center flex-wrap " id="contents">
                 ${createSkeletonCardPatriot(20)}
             </div>
-            <div class="pagination">
-
+            <div class="scroll-up">
+                <button type="button" class='moveUp handleScrollUp' id='back-to-top' >
+                    <i class="bi bi-arrow-up"></i>
+                </button>
             </div>
         </div>
         `
@@ -118,6 +120,32 @@ const Patriot = {
                 } 
             }
         });
+
+
+        // handle back-to-top
+        let btnScroll = document.getElementById('back-to-top');
+        const handleScrollUp = document.querySelector('.handleScrollUp');
+        window.onscroll = function () {
+            scrollFunction();
+        };
+        const scrollFunction = () => {
+            if (
+                document.body.scrollTop > 500 ||
+                document.documentElement.scrollTop > 500
+            ) {
+                btnScroll.style.display = 'block';
+            } else {
+                btnScroll.style.display = 'none';
+            }
+        }
+        handleScrollUp.addEventListener('click', (e) => {
+            e.preventDefault();
+            const element = document.getElementById('mainContent');
+            element.scrollIntoView({behavior: 'smooth'});
+        });
+
+
+ 
 
     },
 }

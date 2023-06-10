@@ -6,7 +6,7 @@ const createCardPatriotTemplate = (id, data) => {
             <h6 class="card-gelar" tabindex="0">${data.gelar_pahlawan}</h6>
         </div>
         <div class=" d-flex mx-auto justify-content-center py-3 border-top border-bottom border-dark">
-            <img src="${data.gambar}" class="img-fluid" alt="Gambar ${data.nama}" width="140" >
+            <img data-src="${data.gambar}" class="img-fluid lazyload" alt="Gambar ${data.nama}" width="140" >
         </div>
         <div class="card-body ">
             <dl class="row px-2">
@@ -23,7 +23,7 @@ const createCardPatriotTemplate = (id, data) => {
             </dl>
             </div>
             <div class="wrapper-btn-detail">
-                <a href="#/detail-patriot/${id}" class="btn w-100 btn-detail justify-content-center" tabindex="0">Detail</a>
+                <a href="#/detail-patriot/${id}" class="btn w-100 btn-detail justify-content-center" tabindex="0" >Detail</a>
             </div>
     </div>
     `
@@ -35,7 +35,7 @@ const createDetailPatriotTemplate = (data) => {
     <div class="row px-3">
         <div class="d-flex detail-content">
             <div class="col-sm col-md-5 col-lg-4 detail-image ">
-                <img src="${data.gambar}"  alt="${data.nama}" class="img-fluid rounded" width="350">
+                <img data-src="${data.gambar}"  alt="${data.nama}" class="img-fluid rounded lazyload" width="350">
             </div>
             <div class="col-sm col-md-6 col-lg detail-header mx-4">
                 <h1 class="text-center fw-bold text-dark-emphasis">${data.nama}</h1>

@@ -56,6 +56,11 @@
     font-weight: normal !important;
     color: #3b3b3b;
   }
+  .moveUp{
+    right: 0;
+    margin-right: 55px;
+    z-index: 99;
+   }
 } 
 @media only screen and (min-width: 600px )  and (max-width: 768px){
   .wave{
@@ -147,7 +152,7 @@
   .detail-description p{
     font-size: .9rem;
   }
-  .btn-back-to-top{
+  .moveUp{
     right: 0;
     margin-right: 30px;
     z-index: 99;
