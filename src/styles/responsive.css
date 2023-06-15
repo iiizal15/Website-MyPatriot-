@@ -140,7 +140,6 @@
   }
 }
 
-<<<<<<< HEAD
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .wave {
     height: 55vh;
@@ -378,73 +377,3 @@
 /*
  * Responsive Contact Us
  */
-=======
-/* Contact */
-@media screen and (min-width: 550px) {
-
-  .form {
-      grid-template-columns: 1rf;
-  }
-
-  .contact-info:before {
-      bottom: initial;
-      top: -75px;
-      right: 65px;
-      transform: scale(0.95);
-  }
-
-  .contact-form:before {
-      top: -13px;
-      left: initial;
-      right: 70px;
-  }
-
-  .text {
-      margin: 1rem 0 1.5rem 0;
-  }
-
-  
-
-}
-
-@media screen and (min-width: 800px) {
-
-  .container {
-      padding: 1.5rem;
-  }
-
-  .contact-info:before {
-      display: none;
-  }
-
-  /* form,
-  .contact-info{
-      padding: 1.7rem 1.6rem;
-  } */
-
-  /* .text,
-  .information {
-      font-size: 0.8rem;
-  } */
-
-
-  /* .title {
-      font-size: 1.15rem;
-  } */
-
-  .icon {
-      width: 23px;
-  }
-
-  .input {
-      padding: 0.45rem 1.2rem;
-  }
-
-  .btn {
-      padding: 0.45rem 1.2rem;
-  } 
-
-}
-
-/* end Contact */
->>>>>>> 338b5e43ae095ee48da6e0a778f3a5ed221fe3b5
