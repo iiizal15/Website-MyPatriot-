@@ -1,8 +1,9 @@
 import CONFIG from './config';
+import Firebase from './firebase';
 
 const API_ENDPOINT = {
-  RESTAURANTS: `${CONFIG.BASE_URL}list`,
-  DETAIL: (id) => `${CONFIG.BASE_URL}detail/${id}`,
+  PATRIOT: `${CONFIG.BASE_URL}Pahlawan.json`,
+  // DETAIL: (id) => `${CONFIG.BASE_URL}detail/${id}`,
 };
 
 export default API_ENDPOINT;

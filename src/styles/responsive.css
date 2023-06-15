@@ -1,185 +1,33 @@
-@media only screen and (min-width: 320px) and (max-width: 675px) {
-  .image-jumbo {
-    flex: 1;
-    margin-right: 80px;
-    margin-top: 220px;
-    margin-bottom: 210px;
-    text-align: center;
+@media only screen and (min-width: 1200px) {
+  .wave {
+    height: 65vh;
+    width: 100%;
+    margin-top: -18%;
   }
-  nav {
-    padding: 0 100px;
+  .card {
+    min-width: 350px;
   }
-}
-/* .main-karunia_restaurants {
-    padding: 0 100px;
+  .detail-image img {
+    width: 320px !important ;
   }
-  .list-karunia-restaurants {
-    grid-template-columns: 1fr 1fr 1fr;
+  .detail-header dt {
+    width: 20%;
   }
-  .container-info {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-gap: 1.5em;
-    margin-top: 1em;
-  }
-}
-.restaurant-detail__info,
-.karunia-detail__menu-list,
-.restaurant-detail__review {
-  margin-bottom: 5px;
-  display: grid;
-  grid-template-columns: repeat(1, minmax(300px, 1fr));
-  gap: 50px;
-  margin: 0 auto;
-}
-.detail-review {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-.karunia-item_image-container {
-  max-width: 810px;
-} */
-
-@media only screen and (min-width: 412px) and (max-width: 675px) {
-  .image-jumbo {
-    flex: 1;
-    margin-right: 80px;
-    margin-top: 220px;
-    margin-bottom: 210px;
-    text-align: center;
-  }
-  nav {
-    padding: 0 100px;
-  }
-}
-/* .main-karunia_restaurants {
-    padding: 0 100px;
-  }
-  .list-karunia-restaurants {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .container-info {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-gap: 1.5em;
-    margin-top: 1em;
-  }
-}
-.restaurant-detail__info,
-.karunia-detail__menu-list,
-.restaurant-detail__review {
-  margin-bottom: 5px;
-  display: grid;
-  grid-template-columns: repeat(1, minmax(300px, 1fr));
-  gap: 50px;
-  margin: 0 auto;
-}
-.detail-review {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-.karunia-item_image-container {
-  max-width: 810px;
-} */
-
-@media only screen and (max-width: 767px) {
-  .image-jumbo {
-    flex: 1;
-    margin-right: 80px;
-    margin-top: 220px;
-    margin-bottom: 210px;
-    text-align: center;
-  }
-  header {
-    padding: 0.5rem;
-  }
-  .nav-container {
-    display: block;
-  }
-  /* .brand {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 150px;
-  } */
-  .nav__menu ul {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
+  .detail-header dd {
+    width: 80%;
   }
 
-  .header_menu {
-    font-size: 19px;
-    display: block;
-  }
-  .nav__menu {
-    justify-content: start;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-  }
-  /* .main-karunia_restaurants {
-    padding: 25px 20px;
-  } */
-  .hero-content-container {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .skipcontent {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 700px) {
   .image-jumbo {
     flex: 1;
-    margin-right: 80px;
-    margin-top: 220px;
-    margin-bottom: 210px;
-    text-align: center;
-  }
-  .header_menu {
-    display: none;
-  }
-  section {
+    margin-left: 100px;
+    margin-top: 80px;
     margin-bottom: 80px;
-  }
-
-  /* .karunia-main-label {
-    font-size: 26px;
-  }
-
-  .list-karunia-restaurants {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .karunia-item_name {
-    font-size: 22px;
-  }
-  .main-karunia_restaurants {
-    padding: 0 30px;
-  } */
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .image-jumbo {
-    flex: 1;
-    margin-right: 80px;
-    margin-top: 220px;
-    margin-bottom: 200px;
     text-align: center;
   }
   nav {
     padding: 0 100px;
   }
-  /* .main-karunia_restaurants {
-    padding: 0 100px;
-  }
-  .list-karunia-restaurants {
-    grid-template-columns: 1fr 1fr 1fr;
-  } */
+
   .container-info {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -187,71 +35,15 @@
     margin-top: 1em;
   }
 }
-/* }
-.restaurant-detail__info,
-.karunia-detail__menu-list,
-.restaurant-detail__review {
-  margin-bottom: 5px;
-  display: grid;
-  grid-template-columns: repeat(1, minmax(300px, 1fr));
-  gap: 50px;
-  margin: 0 auto;
-}
-.detail-review {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-.karunia-item_image-container {
-  max-width: 810px;
-} */
 
-@media only screen and (min-width: 1024px) {
-  .image-jumbo {
-    flex: 1;
-    margin-right: 80px;
-    margin-top: 220px;
-    margin-bottom: 200px;
-    text-align: center;
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .wave {
+    height: 55vh;
+    width: 100%;
+    margin-top: -20%;
   }
-  nav {
-    padding: 0 100px;
-  }
-  /* .main-karunia_restaurants {
-    padding: 0 100px;
-  }
-  .list-karunia-restaurants {
-    grid-template-columns: 1fr 1fr 1fr;
-  } */
-  .container-info {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-gap: 1.5em;
-    margin-top: 1em;
-  }
-}
-/* .restaurant-detail__info,
-.karunia-detail__menu-list,
-.restaurant-detail__review {
-  margin-bottom: 5px;
-  display: grid;
-  grid-template-columns: repeat(1, minmax(300px, 1fr));
-  gap: 50px;
-  margin: 0 auto;
-}
-.detail-review {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-.karunia-item_image-container {
-  max-width: 810px;
-} */
-
-@media screen and (max-width: 600px) {
-  .patriot-button {
-    padding: 8px 16px;
-    font-size: 14px;
+  .detail-image img {
+    width: 300px !important ;
   }
 }
 
@@ -262,15 +54,14 @@
   }
   .jumbotron {
     flex: 1;
-    margin-right: 20px;
     margin-bottom: 0;
   }
 
   .image-jumbo {
     flex: 1;
-    margin-right: 80px;
-    margin-top: 220px;
-    margin-bottom: 210px;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     text-align: center;
   }
 
@@ -287,7 +78,7 @@
 
   .article1__image {
     flex: 1;
-    margin-right: 80px;
+    margin-left: 100px;
     margin-top: 80px;
     margin-bottom: 80px;
     text-align: center;
@@ -296,6 +87,7 @@
   .article2 {
     flex-direction: row;
     align-items: flex-start;
+    margin-right: 100px;
   }
 
   .article2__desc {
@@ -305,8 +97,9 @@
 
   .article2__image {
     flex: 1;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     text-align: center;
   }
 
@@ -321,15 +114,16 @@
 
   .article3__image {
     flex: 1;
-    margin-right: 80px;
-    margin-top: 125px;
-    margin-bottom: 125px;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     text-align: center;
   }
 
   .article4 {
     flex-direction: row;
     align-items: flex-start;
+    margin-right: 100px;
   }
 
   .article4__desc {
@@ -339,8 +133,247 @@
 
   .article4__image {
     flex: 1;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     text-align: center;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .wave {
+    height: 55vh;
+    width: 100%;
+    margin-top: -40%;
+  }
+
+  .detail-image img {
+    width: 300px !important;
+  }
+  .detail-header h1 {
+    font-size: 1.5rem;
+  }
+  .detail-header h3 {
+    font-size: 1rem;
+  }
+
+  .detail-header dl {
+    font-size: 0.95rem;
+  }
+
+  .detail-description h3 {
+    font-size: 1.2rem;
+  }
+  .detail-description p {
+    font-size: 0.98rem;
+    font-weight: normal !important;
+    color: #3b3b3b;
+  }
+  .moveUp {
+    right: 0;
+    margin-right: 55px;
+    z-index: 99;
+  }
+  .image-jumbo {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  nav {
+    padding: 0 100px;
+  }
+
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .wave {
+    height: 50vh;
+    width: 100%;
+    margin-top: -30%;
+  }
+
+  .detail-box {
+    width: 100%;
+  }
+  .detail-image {
+    text-align: center;
+  }
+  .detail-image img {
+    width: 320px;
+  }
+  .detail-header {
+    margin-top: 15px;
+  }
+  .detail-header h1 {
+    font-size: 1.4rem;
+  }
+  .detail-header h3 {
+    font-size: 1rem;
+  }
+  .detail-description h3 {
+    font-size: 1.1rem;
+  }
+  .detail-description p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wave {
+    height: 45vh;
+    width: 100%;
+    margin-top: -35%;
+  }
+
+  .card {
+    height: 550px;
+  }
+
+  .card dt {
+    width: 40%;
+    font-size: 0.9rem;
+  }
+  .card dd {
+    font-size: 0.9rem;
+    width: 60%;
+  }
+
+  .detail-image {
+    text-align: center;
+  }
+  .detail-image img {
+    width: 320px;
+  }
+  .detail-header {
+    margin-top: 15px;
+  }
+  .detail-header h1 {
+    font-size: 1.4rem;
+  }
+  .detail-header h3 {
+    font-size: 1rem;
+  }
+  .detail-content {
+    display: block !important;
+  }
+  .detail-header dl {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .detail-header dt {
+    width: 40%;
+  }
+  .detail-header dd {
+    width: 60%;
+  }
+  .detail-header dt,
+  .detail-header dd {
+    font-size: 0.9rem;
+  }
+  .detail-description h3 {
+    font-size: 1.1rem;
+  }
+  .detail-description p {
+    font-size: 0.9rem;
+  }
+  .moveUp {
+    right: 0;
+    margin-right: 30px;
+    z-index: 99;
+  }
+
+  .patriot-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/*
+ * Responsive CSS Home
+ */
+
+@media only screen and (min-width: 320px) and (max-width: 675px) {
+  .image-jumbo {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  nav {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 675px) {
+  nav {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .image-jumbo {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  header {
+    padding: 0.5rem;
+  }
+  .nav-container {
+    display: block;
+  }
+  .nav__menu ul {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_menu {
+    font-size: 19px;
+    display: block;
+  }
+  .nav__menu {
+    justify-content: start;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .hero-content-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .skipcontent {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .image-jumbo {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  .header_menu {
+    display: none;
+  }
+  section {
+    margin-bottom: 80px;
+  }
+}
+
+/*
+ * Responsive Contact Us
+ */

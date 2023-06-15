@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#b09b71" />
-    <meta name="description" content="Find the National Hero of your choice! " />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#B09B71" />
+    <meta name="description" content="Aplikasi My Patriot merupakan aplikasi yang menyediakan biografi Pahlawan Nasional Indonesia" />
 
-    <link rel="icon" href="./mypat.png" />
+    <link rel="icon" href="./favicon.png" />
     <link rel="manifest" href="./app.webmanifest" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
 
     <title>My Patriot</title>
   </head>
@@ -19,7 +20,8 @@
       <nav>
         <div class="nav-container" id="navcontainer">
           <div class="brand">
-            <img src="./logos.png" alt="Logo My Patriot" />
+            <!--    <img data-src=".logo.png" alt="Logo My Patriot" class="lazyload" /> -->
+            <img src=".logo.png" alt="Logo My Patriot" />
             <button id="menu" class="header_menu" aria-label="button menu dropdown">☰</button>
           </div>
           <div class="nav__menu" id="navmenu">
@@ -28,13 +30,13 @@
                 <a href="/">HOME</a>
               </li>
               <li>
-                <a href="#">PATRIOT</a>
+                <a href="#/patriot">PATRIOT</a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/fahrizal-amri-bachtiar-955647242/">ABOUT US</a>
               </li>
               <li>
-                <a href="#">CONTACT US</a>
+                <a href="#/contactus">CONTACT US</a>
               </li>
             </ul>
           </div>
@@ -42,81 +44,9 @@
       </nav>
     </header>
 
-    <!-- Hero Jumbotron Element -->
-    <div class="hero-container" id="hero">
-      <div class="hero-content-container">
-        <div class="jumbotron">
-          <h1>My Patriot</h1>
-          <p>
-            Website seputar informasi mengenai pemahaman dan penghargaan terhadap Pahlawan Nasional Indonesia tersebut sehingga diharapkan dapat memberikan manfaat dan kemudahan terhadap pengguna dalam mengenal, mengetahui dan memahami jasa
-            para Pahlawan Nasional di Indonesia.
-          </p>
-          <button type="button" class="patriot-button" onclick="alert('Ga Bahayya ta?')">Patriot</button>
-        </div>
-        <div class="image-jumbo">
-          <img data-src="./hero1.png" alt="Gambar Jumbotron" class="lazyload" />
-        </div>
-      </div>
-      <!-- <div class="image-jumbo">
-         <img src="./hero1.png" alt="Gambar Jumbotron" />
-      </div> -->
-    </div>
-
-    <!-- Main Content -->
-    <main>
-      <div id="content">
-        <!-- Explore Restoran -->
-        <div class="explore">
-          <div class="explore__container">
-            <p><span> Pentingnya </span> Mengenal <span> Pahlawan Nasional</span></p>
-          </div>
-        </div>
-
-        <!-- Article Section -->
-        <article class="article">
-          <div class="article1">
-            <div class="article1__desc">
-              <h3>Pahlawan mengajarkan bagaimana cara menghargai arti dari perjuangan</h3>
-            </div>
-            <div class="article1__image">
-              <img data-src="./hero2.png" alt="Gambar Article 1" class="lazyload" />
-            </div>
-          </div>
-        </article>
-
-        <article class="articles">
-          <div class="article2">
-            <div class="article2__image">
-              <img data-src="./hero3.png" alt="Gambar Article 2" class="lazyload" />
-            </div>
-            <div class="article2__desc">
-              <h3>Teladan Bagi Masyarakat dalam memperjuangkan bangsa Indonesia</h3>
-            </div>
-          </div>
-        </article>
-
-        <article class="articlet">
-          <div class="article3">
-            <div class="article3__desc">
-              <h3>Memaknai arti persatuan dalam sebuah negara</h3>
-            </div>
-            <div class="article3__image">
-              <img data-src="./hero4.png" alt="Gambar Article 3" class="lazyload" />
-            </div>
-          </div>
-        </article>
-
-        <article class="articlex">
-          <div class="article4">
-            <div class="article4__image">
-              <img data-src="./hero5.png" alt="Gambar Article 4" class="lazyload" />
-            </div>
-            <div class="article4__desc">
-              <h3>Lebih mengenal sejarah bangsa yang beragam</h3>
-            </div>
-          </div>
-        </article>
-      </div>
+    <main id="mainContent" tabindex="0">
+      <div id="content"></div>
+      <!-- <div class="contactus"></div> -->
     </main>
 
     <!-- <main id="mainContent" class="main-karunia_restaurants"></main> -->

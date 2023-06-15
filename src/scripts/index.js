@@ -1,10 +1,10 @@
 import 'regenerator-runtime';
 import '../styles/main.css';
+import '../styles/patriot.css';
 import '../styles/responsive.css';
-import App from './views/app';
-import swRegister from './utils/sw-register';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import App from './view/app';
 
 const app = new App({
   button: document.querySelector('#menu'),
@@ -19,20 +19,19 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
-  swRegister();
+});
 
-  // Load images lazily
-  const lazyImages = document.querySelectorAll('img[data-src]');
-  lazyImages.forEach((lazyImage) => {
-    lazyImage.addEventListener('load', () => {
-      lazyImage.classList.add('lazyloaded');
-    });
-
-    lazyImage.addEventListener('error', () => {
-      lazyImage.classList.add('lazyerror');
-    });
-
-    // eslint-disable-next-line no-param-reassign
-    lazyImage.src = lazyImage.dataset.src;
+// Load images lazily
+const lazyImages = document.querySelectorAll('img[src]');
+lazyImages.forEach((lazyImage) => {
+  lazyImage.addEventListener('load', () => {
+    lazyImage.classList.add('lazyloaded');
   });
+
+  lazyImage.addEventListener('error', () => {
+    lazyImage.classList.add('lazyerror');
+  });
+
+  // eslint-disable-next-line no-param-reassign
+  lazyImage.src = lazyImage.dataset.src;
 });

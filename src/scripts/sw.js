@@ -1,5 +1,6 @@
 import { precacheAndRoute } from 'workbox-precaching';
 
+// Do precaching
 precacheAndRoute(self.__WB_MANIFEST);
 
 self.addEventListener('install', () => {
@@ -7,27 +8,6 @@ self.addEventListener('install', () => {
   self.skipWaiting();
 });
 
-self.addEventListener('activate', () => {
-  console.log('Activating Service Worker ...');
-});
-self.addEventListener('fetch', (event) => {
-  console.log(event.request);
-
-  event.respondWith(fetch(event.request));
-});
-
-self.addEventListener('push', (event) => {
+self.addEventListener('push', () => {
   console.log('Service Worker: Pushed');
-
-  const dataJson = event.data.json();
-  const notification = {
-    title: dataJson.title,
-    options: {
-      body: dataJson.options.body,
-      icon: dataJson.options.icon,
-      image: dataJson.options.image,
-    },
-  };
-
-  event.waitUntil(self.registration.showNotification(notification.title, notification.options));
 });

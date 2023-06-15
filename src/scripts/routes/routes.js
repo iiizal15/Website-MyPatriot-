@@ -1,10 +1,13 @@
-import Restaurant from '../views/pages/restaurant-pages';
-import Detail from '../views/pages/detail-pages';
-import Favorite from '../views/pages/favorite-pages';
+import DetailPatriot from '../view/pages/detail-patriot';
+import Home from '../view/pages/home';
+import Patriot from '../view/pages/patriot';
+import Contactus from '../view/pages/contactus';
 
 const routes = {
-  '/': Restaurant,
-  '/favorite': Favorite,
-  '/detail/:id': Detail,
+  '/': Home,
+  '/patriot': Patriot,
+  '/detail-patriot/:id': DetailPatriot,
+  '/contactus': Contactus,
 };
+
 export default routes;
