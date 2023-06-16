@@ -20,18 +20,3 @@ window.addEventListener('hashchange', () => {
 window.addEventListener('load', () => {
   app.renderPage();
 });
-
-// Load images lazily
-// const lazyImages = document.querySelectorAll('img[src]');
-// lazyImages.forEach((lazyImage) => {
-//   lazyImage.addEventListener('load', () => {
-//     lazyImage.classList.add('lazyloaded');
-//   });
-
-//   lazyImage.addEventListener('error', () => {
-//     lazyImage.classList.add('lazyerror');
-//   });
-
-//   // eslint-disable-next-line no-param-reassign
-//   lazyImage.src = lazyImage.dataset.src;
-// });

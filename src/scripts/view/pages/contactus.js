@@ -1,4 +1,4 @@
-import ContactUsHandler from "../../utils/contactusHandler";
+import ContactUsHandler from '../../utils/contactusHandler';
 
 const Contactus = {
   async render() {
@@ -34,17 +34,17 @@ const Contactus = {
   
                     <div class="input-container">
                         <label for="name"> Name</label>
-                        <input type="text" name="name" id="name" class="input" required>  
+                        <input type="text" name="name" id="name" class="input" required placeholder="Enter your name">  
                     </div>
   
                     <div class="input-container">
                     <label for="email"> Email</label>
-                    <input type="email" name="name" id="email" class="input" required>
+                    <input type="email" name="name" id="email" class="input" required placeholder="Enter your email">
                   </div>
   
                     <div class="input-container textarea focus" >
                     <label for="message">Message</label>
-                      <textarea name="message" class="input" id="message" required></textarea>
+                      <textarea name="message" class="input" id="message" required placeholder="Enter your message..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-submit" id="btn-submit">Submit</button>
                 </form>
@@ -59,7 +59,7 @@ const Contactus = {
     submitContactUs.addEventListener('click', (e) => {
       e.preventDefault();
       ContactUsHandler();
-    })
+    });
   },
 };
 

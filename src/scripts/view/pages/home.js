@@ -18,7 +18,7 @@ const Home = {
               <h3>Pahlawan mengajarkan bagaimana cara menghargai arti dari perjuangan</h3>
             </div>
             <div class="article1__image">
-              <img data-src="./img/hero2.png" alt="Gambar Article 1" class="lazyload" />
+              <img src="./img/hero2.png" alt="Gambar Article 1" class="lazyload" />
             </div>
           </div>
         </article>
@@ -26,7 +26,7 @@ const Home = {
         <article class="articles">
           <div class="article2">
             <div class="article2__image">
-              <img data-src="./img/hero3.png" alt="Gambar Article 2" class="lazyload" />
+              <img src="./img/hero3.png" alt="Gambar Article 2" class="lazyload" />
             </div>
             <div class="article2__desc">
               <h3>Teladan Bagi Masyarakat dalam memperjuangkan bangsa Indonesia</h3>
@@ -40,7 +40,7 @@ const Home = {
               <h3>Memaknai arti persatuan dalam sebuah negara</h3>
             </div>
             <div class="article3__image">
-              <img data-src="./img/hero4.png" alt="Gambar Article 3" class="lazyload" />
+              <img src="./img/hero4.png" alt="Gambar Article 3" class="lazyload" />
             </div>
           </div>
         </article>
@@ -48,7 +48,7 @@ const Home = {
         <article class="articlex">
           <div class="article4">
             <div class="article4__image">
-              <img data-src="./img/hero5.png" alt="Gambar Article 4" class="lazyload" />
+              <img src="./img/hero5.png" alt="Gambar Article 4" class="lazyload" />
             </div>
             <div class="article4__desc">
               <h3>Lebih mengenal sejarah bangsa yang beragam</h3>
@@ -58,6 +58,7 @@ const Home = {
         `;
   },
 
+  // eslint-disable-next-line no-empty-function
   async afterRender() {},
 };
 

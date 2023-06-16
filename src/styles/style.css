@@ -1,185 +1,183 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-  }
-  
-  main {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  club-list {
-    display: block;
-    margin-top: 32px;
-    width: 100%;
-    padding: 16px;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background-color: #bf1722;
-    text-decoration: none;
-    outline: none;
-    color: white;
-    padding: 8px;
-    z-index: 99999999999;
-  }
-   
-  .skip-link:focus {
-     top: 0;
-  }
-  
+body {
+  font-family: sans-serif;
+}
 
-  nav{
-    background-color: #B09B71 !important;
-    z-index: 999999;
-  }
-  .jumbotron{
-    background-color: #EDDFB3;
-  }
-  nav .navbar-brand,
-  .nav-item a{
-    color: white;
-  }
+main {
+  width: 100%;
+  margin: 0 auto;
+}
 
-  .wave{
-    box-sizing: border-box;
-    height: 65vh;
-    width: 100%;
-    background-image: url('../public/svg/wave-patriot-1.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -20%;
-    object-fit: contain;
-    object-position: center;
-  }
+club-list {
+  display: block;
+  margin-top: 32px;
+  width: 100%;
+  padding: 16px;
+}
 
-  .search .form-control {
-    border-radius: 50px 0 0 50px;
-    background-color: #EDDFB3;
-  }
-  .search .btn-search{
-    border-radius: 0px 50px 50px 0px;
-    background-color: #B09B71 !important;
-    cursor: pointer;
-  }
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  padding: 8px;
+  z-index: 99999999999;
+}
 
-  .card{
-    min-height: 600px;
-    min-width: 320px;
-  }
+.skip-link:focus {
+  top: 0;
+}
 
-  .card,
-  .card-header,
-  .card-body{
-    background-color: #EDDFB3 ;
-    border-radius: 5px;
-  }
+nav {
+  background-color: #b09b71 !important;
+  z-index: 999999;
+}
+.jumbotron {
+  background-color: #eddfb3;
+}
+nav .navbar-brand,
+.nav-item a {
+  color: white;
+}
 
-  .card img{
-    object-position: center;
-    object-fit: cover;
-    width: 200px;
-    height: 190px;
-  }
-  .font-card-left,
-  .font-card-right{
-    font-size: .97rem;
-  }
-  .wrapper-btn-detail{
-    padding-inline: 20px !important;
-    width: 100%;
-    /* bottom: 0 !important; */
-    transform: translate(0,-40%) !important;
+.wave {
+  box-sizing: border-box;
+  height: 65vh;
+  width: 100%;
+  background-image: url('../public/svg/wave-patriot-1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -20%;
+  object-fit: contain;
+  object-position: center;
+}
 
-  }
-  .btn-detail{
-    background-color: #B09B71 ;
-  }
-  .btn-detail:hover{
-    background-color: #978560 ;
-  }
+.search .form-control {
+  border-radius: 50px 0 0 50px;
+  background-color: #eddfb3;
+}
+.search .btn-search {
+  border-radius: 0px 50px 50px 0px;
+  background-color: #b09b71 !important;
+  cursor: pointer;
+}
 
-  .btn-back-to-top{
-   margin-left: 20px;
-   padding: 10px 14px;
-   position: fixed;
-   bottom: 50px;
-   right: 75px;
-   z-index: 99;
-   background-color: #978560;
-   color: white;
-   border-radius: 20%;
-   display: none; /*default none*/
-   align-items: center;
-   justify-content: center;
-   opacity: 0.9;
-   border: none !important;
-  }
+.card {
+  min-height: 600px;
+  min-width: 320px;
+}
 
+.card,
+.card-header,
+.card-body {
+  background-color: #eddfb3;
+  border-radius: 5px;
+}
 
-  /* DETAIL MY PATRIOT */
-  .detail-box{
-    background-color: #EDDFB3;
-  }
+.card img {
+  object-position: center;
+  object-fit: cover;
+  width: 200px;
+  height: 190px;
+}
+.font-card-left,
+.font-card-right {
+  font-size: 0.97rem;
+}
+.wrapper-btn-detail {
+  padding-inline: 20px !important;
+  width: 100%;
+  /* bottom: 0 !important; */
+  transform: translate(0, -40%) !important;
+}
+.btn-detail {
+  background-color: #b09b71;
+}
+.btn-detail:hover {
+  background-color: #978560;
+}
 
-  .detail-description p{
-    word-spacing: .9px;
-  }
+.btn-back-to-top {
+  margin-left: 20px;
+  padding: 10px 14px;
+  position: fixed;
+  bottom: 50px;
+  right: 75px;
+  z-index: 99;
+  background-color: #978560;
+  color: white;
+  border-radius: 20%;
+  display: none; /*default none*/
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  border: none !important;
+}
 
-  footer{
-    background-color: #B09B71;
-  }  
+/*
+ * DETAIL MY PATRIOT
+ */
 
-  .skeleton{
-    position: relative;
-    user-select: none;
-  }
-  .skeleton::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 1px;
-    z-index: 99;
-    background: linear-gradient(90deg, #eee, #f9f9f9, #eee);
-    background-size: 200%;
-    animation: skeleton 1s infinite reverse ;
-  }
-  
-  @keyframes skeleton {
-    0%{
-      background-position: -100% 0;
-    }
-    100%{
-      background-position: 100% 0;
-    }
-  }
+.detail-box {
+  background-color: #eddfb3;
+}
 
-  .moveUp {
-    margin-left: 20px;
-    padding: 11px 13.5px;
-    position: fixed;
-    bottom: 50px;
-    right: 75px;
-    z-index: 99;
-    background-color: #978560;
-    color: white;
-    border-radius: 20%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.8;
-    border: none !important;
- }
-  
-  
+.detail-description p {
+  word-spacing: 0.9px;
+}
+
+footer {
+  background-color: #b09b71;
+}
+
+.skeleton {
+  position: relative;
+  user-select: none;
+}
+.skeleton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  z-index: 99;
+  background: linear-gradient(90deg, #eee, #f9f9f9, #eee);
+  background-size: 200%;
+  animation: skeleton 1s infinite reverse;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.moveUp {
+  margin-left: 20px;
+  padding: 11px 13.5px;
+  position: fixed;
+  bottom: 50px;
+  right: 75px;
+  z-index: 99;
+  background-color: #978560;
+  color: white;
+  border-radius: 20%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  border: none !important;
+}

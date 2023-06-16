@@ -58,9 +58,9 @@ header {
   z-index: 100;
 }
 
-.nav{
+.nav {
   position: sticky;
-  top: 0 ;
+  top: 0;
   z-index: 999;
   background-color: #b09b71;
   width: 100%;
@@ -68,40 +68,45 @@ header {
   justify-content: space-between;
   align-items: center;
   /* padding: 15px; */
-  box-shadow: 1px 2px 6px 3px rgba(0,0,0,0.04);
+  box-shadow: 1px 2px 6px 3px rgba(0, 0, 0, 0.04);
   /* border: 1px solid green; */
   padding: 20px 30px;
 }
 
-.nav-brand img{
+.nav-brand img {
   height: auto;
   width: 150px;
+  margin-left: 45px;
   /* border: 1px solid yellowgreen; */
 }
-.nav-menu{
+.nav-menu {
   /* border: 1px solid; */
   margin: auto 0 !important;
 }
-.nav-item{
+.nav-item {
   /* border: 1px solid red; */
   box-sizing: border-box;
   display: inline-block;
-  margin-right: 30px;   
+  margin-right: 30px;
   list-style: none;
 }
-.nav-item a{
+.nav-item a {
   text-decoration: none;
   color: var(--text-gray-500);
   padding: 15px;
 }
-.nav .dropdown{
+.nav-item a:hover {
+  font-weight: bold;
+  color: goldenrod;
+}
+.nav .dropdown {
   position: relative;
   cursor: pointer;
 }
-.nav .dropdown i{
+.nav .dropdown i {
   transform: translateY(-2px);
 }
-.nav .dropdown-menu{
+.nav .dropdown-menu {
   position: absolute;
   background-color: white;
   border: 1px solid #eee;
@@ -111,21 +116,21 @@ header {
   margin-left: -20px;
   display: none;
 }
-.dropdown-item{
+.dropdown-item {
   list-style: none;
 }
-.dropdown-item button{
+.dropdown-item button {
   padding: 15px 20px;
   width: 100%;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-.dropdown-item button i{
+.dropdown-item button i {
   margin-right: 5px;
 }
 
-.menu-hamburger{
+.menu-hamburger {
   display: none;
   cursor: pointer;
   border: none;
@@ -133,7 +138,7 @@ header {
   padding: 15px;
   font-size: 1.5rem;
   color: white;
-}   
+}
 
 /*
  * Hero Jumbotron
@@ -180,7 +185,9 @@ header {
   text-decoration: none;
   border-radius: 5px;
   font-size: 16px;
+  margin-left: 200px;
 }
+
 .patriot-button:hover {
   background-color: goldenrod;
 }
