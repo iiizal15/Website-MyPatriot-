@@ -58,69 +58,82 @@ header {
   z-index: 100;
 }
 
-nav {
-  position: relative;
-  /* width: 100%; */
+.nav{
+  position: sticky;
+  top: 0 ;
+  z-index: 999;
   background-color: #b09b71;
-  padding-block: 25px !important;
-}
-
-.nav-container {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  /* height: 100%; */
-  /* border: 1px solid blue; */
+  align-items: center;
+  /* padding: 15px; */
+  box-shadow: 1px 2px 6px 3px rgba(0,0,0,0.04);
+  /* border: 1px solid green; */
+  padding: 20px 30px;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* padding: 25px; */
-}
-
-.brand img {
+.nav-brand img{
   height: auto;
   width: 150px;
+  /* border: 1px solid yellowgreen; */
 }
-
-.brand button{
-  background-color: transparent;
-  border-radius: 5px;
-  border-color: white;
-  color: white;
+.nav-menu{
+  /* border: 1px solid; */
+  margin: auto 0 !important;
 }
-/* .nav__menu {
-  width: max-content;
-  border: 1px solid red;
-} */
-
-.nav__menu ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto 0;
+.nav-item{
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 30px;   
   list-style: none;
-  /* border: 1px solid green; */
-
 }
-
-.nav__menu ul li {
-  padding: 0;
-}
-
-.nav__menu a {
+.nav-item a{
   text-decoration: none;
-  font-size: 17x;
-  padding: 0.8rem;
-  color: #ffffff;
+  color: var(--text-gray-500);
+  padding: 15px;
+}
+.nav .dropdown{
+  position: relative;
+  cursor: pointer;
+}
+.nav .dropdown i{
+  transform: translateY(-2px);
+}
+.nav .dropdown-menu{
+  position: absolute;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  width: 110px;
+  padding: 10px 0px;
+  margin-left: -20px;
+  display: none;
+}
+.dropdown-item{
+  list-style: none;
+}
+.dropdown-item button{
+  padding: 15px 20px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-item button i{
+  margin-right: 5px;
 }
 
-.nav__menu ul li a:hover {
-  font-weight: bold;
-  color: goldenrod;
-}
+.menu-hamburger{
+  display: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+  font-size: 1.5rem;
+  color: white;
+}   
 
 /*
  * Hero Jumbotron
