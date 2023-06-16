@@ -1,11 +1,4 @@
 const CONFIG = {
-  // BASE_URL: 'https://restapifirebase-94fd0-default-rtdb.firebaseio.com/Mypetriot/',
-  // BASE_IMAGE_URL: 'https://i.ibb.co/ChJbq7f/',
-  // DEFAULT_LANGUAGE: 'en-us',
-  // CACHE_NAME: 'my-patriot_v1.00',
-  // DATABASE_NAME: 'my-patriot',
-  // DATABASE_VERSION: 1,
-  // OBJECT_STORE_NAME: 'my-patriots',
   apiKey: 'AIzaSyDF5nJwJMSTv7PA9An57adkAguDsXz018Q',
   authDomain: 'restapifirebase-94fd0.firebaseapp.com',
   databaseURL: 'https://restapifirebase-94fd0-default-rtdb.firebaseio.com',
