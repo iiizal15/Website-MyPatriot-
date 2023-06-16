@@ -2,7 +2,7 @@ const Contactus = {
   async render() {
     return `
       <!-- Contact Us -->
-        <div class="row p-5">
+        <div class="p-5">
             <div class=" d-flex justify-content-center">
             <div class="form">
             <div class="contact-info">
