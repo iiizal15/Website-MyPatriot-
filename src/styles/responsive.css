@@ -227,6 +227,37 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .menu-hamburger{
+    display: block;
+  }
+  .nav{
+    padding: 10px 30px;
+  }
+  .nav-menu{
+    position: fixed;
+    padding: 10px;
+    top: 60px;
+    z-index: -1;
+    right: -100%;
+    display: flex;
+    grid-area: 0;
+    flex-direction: column;
+    background-color: #b09b71;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ;
+  }
+  .nav-item{
+    margin: 0;
+    padding: 25px ;
+  }
+  .nav-menu.active{
+    right: 0;
+  }
+  .nav .dropdown-menu{
+    width: 100%;
+    margin-top: 10px;
+  }
   .wave{
     height: 45vh;
     width: 100%;

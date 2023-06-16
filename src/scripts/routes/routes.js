@@ -7,7 +7,7 @@ const routes = {
   '/': Home,
   '/patriot': Patriot,
   '/detail-patriot/:id': DetailPatriot,
-  '/contactus': Contactus,
+  '/contact-us': Contactus,
 };
 
 export default routes;
