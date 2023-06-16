@@ -1,3 +1,5 @@
+import ContactUsHandler from "../../utils/contactusHandler";
+
 const Contactus = {
   async render() {
     return `
@@ -31,21 +33,20 @@ const Contactus = {
                     <h3 class="title">CONTACT</h3>
   
                     <div class="input-container">
-                        <label for=""> Name</label>
-                        <input type="text" name="name" class="input">  
+                        <label for="name"> Name</label>
+                        <input type="text" name="name" id="name" class="input" required>  
                     </div>
   
                     <div class="input-container">
-                    <label for=""> Email</label>
-                    <input type="mail" name="name" class="input">
+                    <label for="email"> Email</label>
+                    <input type="email" name="name" id="email" class="input" required>
                   </div>
   
                     <div class="input-container textarea focus" >
-                    <label for="">Message</label>
-                      <textarea name="message" class="input"></textarea>
+                    <label for="message">Message</label>
+                      <textarea name="message" class="input" id="message" required></textarea>
                     </div>
-                    <input type="submit" value="Send Message" class="btn btn-submit">
-  
+                    <button type="submit" class="btn btn-submit" id="btn-submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -53,7 +54,13 @@ const Contactus = {
         </div> 
         `;
   },
-  async afterRender() {},
+  async afterRender() {
+    const submitContactUs = document.querySelector('#btn-submit');
+    submitContactUs.addEventListener('click', (e) => {
+      e.preventDefault();
+      ContactUsHandler();
+    })
+  },
 };
 
 export default Contactus;
