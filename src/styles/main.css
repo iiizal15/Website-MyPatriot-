@@ -459,6 +459,7 @@ header {
 
 .contact-form {
   background-color: rgb(164, 158, 158);
+  border-radius: 10px;
 }
 
 .circle {
