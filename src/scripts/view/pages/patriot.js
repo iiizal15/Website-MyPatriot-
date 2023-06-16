@@ -20,8 +20,9 @@ const Patriot = {
             <div class="col-xs-2 col-sm-2 col-md-5 col-lg-2 mb-3">
                     <select class="form-select" tabindex="0" id="gelar-pahlawan">
                     <option selected value="Gelar Pahlawan">Gelar Pahlawan</option>
-                    <option value="Pahlawan Nasional">Nasional</option>
-                    <option value="Pahlawan Revolusi">Revolusi</option>
+                    <option value="Pahlawan Nasional">Pahlawan Nasional</option>
+                    <option value="Pahlawan Revolusi">Pahlawan Revolusi</option>
+                    <option value="Pahlawan Kemerdekaan Nasional">Pahlawan Kemerdekaan Nasional</option>
                 </select>
             </div>
             <div class="col-xs-2 col-sm-2 col-md-5 col-lg-2 ">

@@ -1,100 +1,232 @@
-@media only screen and (min-width: 1200px ) {
-    .wave{
-      height: 65vh;
-      width: 100%;
-      margin-top: -18%;
-    }
-    .card{
-      min-width: 350px;
-    }
-    .detail-image img{
-      width:320px !important ;
-    }
-    .detail-header dt{
-      width: 20%;
-    }
-    .detail-header dd{
-      width: 80%;
-    }
+@media only screen and (min-width: 1200px) {
+  .wave {
+    height: 65vh;
+    width: 100%;
+    margin-top: -18%;
+  }
+  .card {
+    min-width: 350px;
+  }
+  .detail-image img {
+    width: 320px !important ;
+  }
+  .detail-header dt {
+    width: 20%;
+  }
+  .detail-header dd {
+    width: 80%;
+  }
+
+  .image-jumbo {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  nav {
+    padding: 0 100px;
+  }
+
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 1em;
+  }
 }
-@media only screen and (min-width: 992px )  and (max-width: 1200px){
-  .wave{
-    height:55vh;
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .wave {
+    height: 55vh;
     width: 100%;
     margin-top: -20%;
   }
-  .detail-image img{
-    width:300px !important ;
+  .detail-image img {
+    width: 300px !important ;
   }
-} 
-@media only screen and (min-width: 768px )  and (max-width: 992px){
-  .wave{
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-content-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .jumbotron {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .image-jumbo {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .article1 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .article1__desc {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .article1__image {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .article2 {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 100px;
+  }
+
+  .article2__desc {
+    flex: 1;
+    margin: auto;
+  }
+
+  .article2__image {
+    flex: 1;
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .article3 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .article3__desc {
+    flex: 1;
+  }
+
+  .article3__image {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .article4 {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 100px;
+  }
+
+  .article4__desc {
+    flex: 1;
+    margin: auto;
+  }
+
+  .article4__image {
+    flex: 1;
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .wave {
     height: 55vh;
     width: 100%;
     margin-top: -40%;
   }
-  
-  .detail-image img{
+
+  .detail-image img {
     width: 300px !important;
   }
-  .detail-header h1{
+  .detail-header h1 {
     font-size: 1.5rem;
   }
-  .detail-header h3{
+  .detail-header h3 {
     font-size: 1rem;
   }
 
-  .detail-header dl{
-    font-size: .95rem;
+  .detail-header dl {
+    font-size: 0.95rem;
   }
 
-  .detail-description h3{
+  .detail-description h3 {
     font-size: 1.2rem;
   }
-  .detail-description p{
-    font-size: .98rem;
+  .detail-description p {
+    font-size: 0.98rem;
     font-weight: normal !important;
     color: #3b3b3b;
   }
-  .moveUp{
+  .moveUp {
     right: 0;
     margin-right: 55px;
     z-index: 99;
-   }
-} 
-@media only screen and (min-width: 600px )  and (max-width: 768px){
-  .wave{
+  }
+  .image-jumbo {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  nav {
+    padding: 0 100px;
+  }
+
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .wave {
     height: 50vh;
     width: 100%;
     margin-top: -30%;
   }
-  
-  .detail-box{
+
+  .detail-box {
     width: 100%;
   }
-  .detail-image{
+  .detail-image {
     text-align: center;
   }
-  .detail-image img{
+  .detail-image img {
     width: 320px;
   }
-  .detail-header{
+  .detail-header {
     margin-top: 15px;
   }
-  .detail-header h1{
+  .detail-header h1 {
     font-size: 1.4rem;
   }
-  .detail-header h3{
+  .detail-header h3 {
     font-size: 1rem;
   }
-  .detail-description h3{
+  .detail-description h3 {
     font-size: 1.1rem;
   }
-  .detail-description p{
-    font-size: .9rem;
+  .detail-description p {
+    font-size: 0.9rem;
   }
-} 
-@media only screen and (max-width: 600px ){
+}
+@media only screen and (max-width: 600px) {
   .wave{
     height: 45vh;
     width: 100%;
@@ -157,4 +289,91 @@
     margin-right: 30px;
     z-index: 99;
    }
-} 
+
+  .patriot-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/*
+ * Responsive CSS Home
+ */
+
+@media only screen and (min-width: 320px) and (max-width: 675px) {
+  .image-jumbo {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  nav {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 675px) {
+  nav {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .image-jumbo {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  /* header {
+    padding: 0.5rem;
+  } */
+  .nav-container {
+    display: block;
+  }
+  .nav__menu ul {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_menu {
+    font-size: 19px;
+    display: block;
+  }
+  .nav__menu {
+    justify-content: start;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .hero-content-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .skipcontent {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .image-jumbo {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  .header_menu {
+    display: none;
+  }
+  section {
+    margin-bottom: 80px;
+  }
+}
+
+/*
+ * Responsive Contact Us
+ */

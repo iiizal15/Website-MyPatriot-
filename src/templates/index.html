@@ -1,60 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Aplikasi My Patriot merupakan aplikasi yang menyediakan biografi Pahlawan Nasional Indonesia">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#B09B71" />
+    <meta name="description" content="Aplikasi My Patriot merupakan aplikasi yang menyediakan biografi Pahlawan Nasional Indonesia" />
+
+    <link rel="icon" href="./favicon.png" />
+    <link rel="manifest" href="./app.webmanifest" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+
     <title>My Patriot</title>
-    <link rel="icon" href="./favicon.png">
-    <link rel="manifest" href="./app.webmanifest">
-    <meta name="theme-color" content="#B09B71"/>
   </head>
   <body>
-    <a href="#mainContent" tabindex="0" class="skip-link">Menuju ke konten <i class="bi bi-arrow-right"></i></a>
-    <nav class="navbar navbar-expand-lg py-3 ">
-      <div class="container">
-        <a class="navbar-brand " href="#">
-          <img src="./img/logo.png" alt="Logo My Patriot" width="150" height="35">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" id="hamburger" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navigationDrawer">
-            <li class="nav-item">
-              <a class="nav-link " href="#/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#/patriot">Patriot</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">Contact</a>
-            </li>
-        </div>
-      </div>
-    </nav>
-    
-    <!-- <header>
-      <div class="jumbotron">
-        <div class="container-fluid">
-          <div class="d-flex justify-content-around align-items-center">
-            <div class="jumbotron-description">
-              <h1>MY PATRIOT</h1>
-              <p>Ciptakan Rasa Nasionalisme Dengan Menghargai Para Pahlawan</p>
-            </div>
-            <div class="jumbotron-image">
-              <img src="./img/heros/hero1.png" alt="">
-            </div>
+    <a class="skipcontent" aria-label="button skip to button" href="#mainContent">Menuju Konten</a>
+    <header>
+      <nav>
+        <div class="nav-container" id="navcontainer">
+          <div class="brand">
+            <img src="./logo.png" alt="Logo My Patriot" width="150">
+            <button id="menu" class="header_menu" aria-label="button menu dropdown">☰</button>
+          </div>
+          <div class="nav__menu" id="navmenu">
+            <ul>
+              <li>
+                <a href="/">HOME</a>
+              </li>
+              <li>
+                <a href="#/patriot">PATRIOT</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/fahrizal-amri-bachtiar-955647242/">ABOUT US</a>
+              </li>
+              <li>
+                <a href="#/contactus">CONTACT US</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </header> -->
-    <main id="mainContent" tabindex="0">
+      </nav>
+    </header>
 
+    <main id="mainContent" tabindex="0">
+      <div id="content"></div>
+      <!-- <div class="contactus"></div> -->
     </main>
+
+    <!-- <main id="mainContent" class="main-karunia_restaurants"></main> -->
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer">Copyright &copy; 2023 - My Patriot</p>
+    </footer>
   </body>
 </html>

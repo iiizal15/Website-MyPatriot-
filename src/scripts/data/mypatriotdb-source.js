@@ -1,10 +1,10 @@
-import { onValue } from "firebase/database";
-import API_ENDPOINT from "../globals/api-endpoint";
-import Firebase from "../globals/firebase";
-import { createCardPatriotTemplate } from "../view/pages/templates/template-creator";
+import { onValue } from 'firebase/database';
+import API_ENDPOINT from '../globals/api-endpoint';
+import Firebase from '../globals/firebase';
+import { createCardPatriotTemplate } from '../view/pages/templates/template-creator';
 
 class MyPatriotIdbSource {
-  
+
   // static async patriot(){
   //   const response = await fetch(API_ENDPOINT.PATRIOT)
   //   const responseJson = await response.json();

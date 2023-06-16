@@ -10,7 +10,7 @@
   
   main {
     width: 100%;
-    margin: 32px auto;
+    margin: 0 auto;
   }
   
   club-list {
@@ -68,6 +68,7 @@
   .search .btn-search{
     border-radius: 0px 50px 50px 0px;
     background-color: #B09B71 !important;
+    cursor: pointer;
   }
 
   .card{
@@ -95,8 +96,9 @@
   .wrapper-btn-detail{
     padding-inline: 20px !important;
     width: 100%;
-    bottom: 0 !important;
+    /* bottom: 0 !important; */
     transform: translate(0,-40%) !important;
+
   }
   .btn-detail{
     background-color: #B09B71 ;
