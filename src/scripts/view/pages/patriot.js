@@ -37,7 +37,7 @@ const Patriot = {
             </div>
             </div>
         </div>
-        <div class="container px-3 mt-4 ">
+        <div class="container px-3 mt-4 mb-3 ">
             <div class="gap-3 d-flex justify-content-center flex-wrap " id="contents">
                 ${createSkeletonCardPatriot(20)}
             </div>
