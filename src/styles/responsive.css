@@ -227,68 +227,68 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .wave {
+  .wave{
     height: 45vh;
     width: 100%;
     margin-top: -35%;
   }
 
-  .card {
+  .card{
     height: 550px;
   }
 
-  .card dt {
+  .card dt{
     width: 40%;
-    font-size: 0.9rem;
+    font-size: .9rem;
   }
-  .card dd {
-    font-size: 0.9rem;
+  .card dd{
+    font-size: .9rem;
     width: 60%;
   }
-
-  .detail-image {
+ 
+  .detail-image{
     text-align: center;
   }
-  .detail-image img {
+  .detail-image img{
     width: 320px;
   }
-  .detail-header {
+  .detail-header{
     margin-top: 15px;
   }
-  .detail-header h1 {
+  .detail-header h1{
     font-size: 1.4rem;
   }
-  .detail-header h3 {
+  .detail-header h3{
     font-size: 1rem;
   }
-  .detail-content {
+  .detail-content{
     display: block !important;
   }
-  .detail-header dl {
+  .detail-header dl{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; 
   }
-  .detail-header dt {
+  .detail-header dt{
     width: 40%;
   }
-  .detail-header dd {
+  .detail-header dd{
     width: 60%;
   }
   .detail-header dt,
-  .detail-header dd {
-    font-size: 0.9rem;
+  .detail-header dd{
+    font-size: .9rem;
   }
-  .detail-description h3 {
+  .detail-description h3{
     font-size: 1.1rem;
   }
-  .detail-description p {
-    font-size: 0.9rem;
+  .detail-description p{
+    font-size: .9rem;
   }
-  .moveUp {
+  .moveUp{
     right: 0;
     margin-right: 30px;
     z-index: 99;
-  }
+   }
 
   .patriot-button {
     padding: 8px 16px;
@@ -327,9 +327,9 @@
     margin-bottom: 80px;
     text-align: center;
   }
-  header {
+  /* header {
     padding: 0.5rem;
-  }
+  } */
   .nav-container {
     display: block;
   }

@@ -60,40 +60,50 @@ header {
 
 nav {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   background-color: #b09b71;
+  padding-block: 25px !important;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+  /* height: 100%; */
+  /* border: 1px solid blue; */
 }
 
 .brand {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px;
+  /* padding: 25px; */
 }
 
-img {
+.brand img {
   height: auto;
-  width: 250px;
+  width: 150px;
 }
 
-.nav__menu {
-  width: max-content;
-  height: 100%;
+.brand button{
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: white;
+  color: white;
 }
+/* .nav__menu {
+  width: max-content;
+  border: 1px solid red;
+} */
 
 .nav__menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  margin: auto 0;
   list-style: none;
+  /* border: 1px solid green; */
+
 }
 
 .nav__menu ul li {
@@ -155,13 +165,8 @@ img {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
   border-radius: 5px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-left: 200px;
+  font-size: 16px;
 }
 .patriot-button:hover {
   background-color: goldenrod;
@@ -403,7 +408,7 @@ img {
   font-weight: normal;
 }
 
-.container {
+/* .container {
   position: relative;
   width: 100%;
   padding: 2rem;
@@ -412,7 +417,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .form {
   width: 100%;
@@ -528,7 +533,7 @@ textarea.input {
   transform: translateY(0);
 }
 
-.btn {
+.btn-submit {
   padding: 0.6rem 1.3rem;
   background-color: #acaaaa;
   border: 2px solid #fafafa;
@@ -542,7 +547,7 @@ textarea.input {
   margin: 0;
 }
 
-.btn:hover {
+.btn-submit:hover {
   background-color: transparent;
   color: #fff;
 }
