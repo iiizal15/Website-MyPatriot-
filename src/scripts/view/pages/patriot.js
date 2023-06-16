@@ -1,10 +1,11 @@
-import { onValue } from 'firebase/database';
-import { createCardPatriotTemplate, createSkeletonCardPatriot } from '../templates/template-creator';
-import Firebase from '../../globals/firebase';
+import {createCardPatriotTemplate, createSkeletonCardPatriot} from './templates/template-creator'
+import { onValue} from "firebase/database";
+import Firebase from "../../globals/firebase";
+
 
 const Patriot = {
-  async render() {
-    return `
+    async render(){
+        return `
         <div class="content-filter">
             <div class="col-sm col-md col-lg wave"></div>
             <div class="row mx-auto justify-content-center p-3">
@@ -19,8 +20,9 @@ const Patriot = {
             <div class="col-xs-2 col-sm-2 col-md-5 col-lg-2 mb-3">
                     <select class="form-select" tabindex="0" id="gelar-pahlawan">
                     <option selected value="Gelar Pahlawan">Gelar Pahlawan</option>
-                    <option value="Pahlawan Nasional">Nasional</option>
-                    <option value="Pahlawan Revolusi">Revolusi</option>
+                    <option value="Pahlawan Nasional">Pahlawan Nasional</option>
+                    <option value="Pahlawan Revolusi">Pahlawan Revolusi</option>
+                    <option value="Pahlawan Kemerdekaan Nasional">Pahlawan Kemerdekaan Nasional</option>
                 </select>
             </div>
             <div class="col-xs-2 col-sm-2 col-md-5 col-lg-2 ">
@@ -45,97 +47,108 @@ const Patriot = {
                 </button>
             </div>
         </div>
-        `;
-  },
+        `
+    },
 
-  async afterRender() {
-    const btnSearch = document.getElementById('btn-search');
-    const filterGelarPahlawan = document.getElementById('gelar-pahlawan');
-    const filterKategoriPahlawan = document.getElementById('kategori-pahlawan');
-    const patriotContainer = document.querySelector('#contents');
-    const patriotDb = Firebase.initializeFirebase();
-    onValue(patriotDb, (snapshot) => {
-      patriotContainer.innerHTML = '';
-      snapshot.forEach((element) => {
-        const id = element.key;
-        const data = element.val();
-        patriotContainer.innerHTML += createCardPatriotTemplate(id, data);
-      });
-    });
+    async afterRender(){
+        const btnSearch = document.getElementById('btn-search');
+        const filterGelarPahlawan = document.getElementById('gelar-pahlawan');
+        const filterKategoriPahlawan = document.getElementById('kategori-pahlawan');
+        const patriotContainer = document.querySelector('#contents');
+        const patriotDb = Firebase.initializeFirebase();
+        onValue(patriotDb, (snapshot) => {
+            patriotContainer.innerHTML = '';
+            snapshot.forEach(function(element){
+                const id = element.key;
+                const data = element.val();
+                patriotContainer.innerHTML += createCardPatriotTemplate(id, data)
+            });
+        });        
 
-    // handle search
-    btnSearch.addEventListener('click', (e) => {
-      e.preventDefault();
-      const inputSearch = document.getElementById('search').value.toLowerCase();
-      const cardItems = document.querySelectorAll('.card');
-      for (let i = 0; i < cardItems.length; i++) {
-        const cardTitle = cardItems[i].getElementsByTagName('h5')[0];
-        if (cardTitle) {
-          const textTitle = cardTitle.textContent;
-          if (textTitle.toLowerCase().indexOf(inputSearch) > -1) {
-            cardItems[i].style.display = 'block';
-          } else {
-            cardItems[i].style.display = 'none';
-          }
+
+        // handle search
+        btnSearch.addEventListener('click', (e) => {
+            e.preventDefault();
+            const inputSearch = document.getElementById('search').value.toLowerCase();
+            const cardItems = document.querySelectorAll('.card');
+            for(let i = 0; i < cardItems.length; i++){
+                const cardTitle = cardItems[i].getElementsByTagName('h5')[0];
+                if(cardTitle){
+                    const textTitle = cardTitle.textContent;
+                    if(textTitle.toLowerCase().indexOf(inputSearch) > -1){
+                        cardItems[i].style.display = 'block'
+                    }else{
+                        cardItems[i].style.display = "none"
+                    }
+                }
+            }
+            
+        });
+
+        // handle filter
+
+        // gelar pahlawan
+        filterGelarPahlawan.addEventListener('change', () => {
+            const cardItems = document.querySelectorAll('.card');
+            const choose = filterGelarPahlawan.options[filterGelarPahlawan.selectedIndex].value;
+            for(let i = 0; i < cardItems.length; i++){
+                const cardGelar = cardItems[i].getElementsByTagName('h6')[0];
+                const textGelar = cardGelar.textContent;
+                if(choose){
+                    if(choose === 'Gelar Pahlawan' || choose === textGelar){
+                        cardItems[i].style.display = 'block';
+                    }else{
+                        cardItems[i].style.display = 'none';
+                    }
+                } 
+            }
+        });
+
+
+        // handle kategori pahlawan
+        filterKategoriPahlawan.addEventListener('change', () => {
+            const cardItems = document.querySelectorAll('.card');
+            const choose = filterKategoriPahlawan.options[filterKategoriPahlawan.selectedIndex].value;
+            for(let i = 0; i < cardItems.length; i++){
+                const cardKategori = cardItems[i].getElementsByTagName('dd')[4];
+                const textKategori = cardKategori.textContent;
+                if(choose){
+                    if(choose === 'Kategori Pahlawan' || choose === textKategori){
+                        cardItems[i].style.display = 'block';
+                    }else{
+                        cardItems[i].style.display = 'none';
+                    }
+                } 
+            }
+        });
+
+
+        // handle back-to-top
+        let btnScroll = document.getElementById('back-to-top');
+        const handleScrollUp = document.querySelector('.handleScrollUp');
+        window.onscroll = function () {
+            scrollFunction();
+        };
+        const scrollFunction = () => {
+            if (
+                document.body.scrollTop > 500 ||
+                document.documentElement.scrollTop > 500
+            ) {
+                btnScroll.style.display = 'block';
+            } else {
+                btnScroll.style.display = 'none';
+            }
         }
-      }
-    });
+        handleScrollUp.addEventListener('click', (e) => {
+            e.preventDefault();
+            const element = document.getElementById('mainContent');
+            element.scrollIntoView({behavior: 'smooth'});
+        });
 
-    // handle filter
 
-    // gelar pahlawan
-    filterGelarPahlawan.addEventListener('change', () => {
-      const cardItems = document.querySelectorAll('.card');
-      const choose = filterGelarPahlawan.options[filterGelarPahlawan.selectedIndex].value;
-      for (let i = 0; i < cardItems.length; i++) {
-        const cardGelar = cardItems[i].getElementsByTagName('h6')[0];
-        const textGelar = cardGelar.textContent;
-        if (choose) {
-          if (choose === 'Gelar Pahlawan' || choose === textGelar) {
-            cardItems[i].style.display = 'block';
-          } else {
-            cardItems[i].style.display = 'none';
-          }
-        }
-      }
-    });
+ 
 
-    // handle kategori pahlawan
-    filterKategoriPahlawan.addEventListener('change', () => {
-      const cardItems = document.querySelectorAll('.card');
-      const choose = filterKategoriPahlawan.options[filterKategoriPahlawan.selectedIndex].value;
-      for (let i = 0; i < cardItems.length; i++) {
-        const cardKategori = cardItems[i].getElementsByTagName('dd')[4];
-        const textKategori = cardKategori.textContent;
-        if (choose) {
-          if (choose === 'Kategori Pahlawan' || choose === textKategori) {
-            cardItems[i].style.display = 'block';
-          } else {
-            cardItems[i].style.display = 'none';
-          }
-        }
-      }
-    });
-
-    // handle back-to-top
-    const btnScroll = document.getElementById('back-to-top');
-    const handleScrollUp = document.querySelector('.handleScrollUp');
-    window.onscroll = function () {
-      scrollFunction();
-    };
-    const scrollFunction = () => {
-      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        btnScroll.style.display = 'block';
-      } else {
-        btnScroll.style.display = 'none';
-      }
-    };
-    handleScrollUp.addEventListener('click', (e) => {
-      e.preventDefault();
-      const element = document.getElementById('mainContent');
-      element.scrollIntoView({ behavior: 'smooth' });
-    });
-  },
-};
+    },
+}
 
 export default Patriot;
