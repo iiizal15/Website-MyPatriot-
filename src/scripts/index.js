@@ -1,6 +1,6 @@
 import 'regenerator-runtime';
 import '../styles/main.css';
-import '../styles/style.css';
+import '../styles/patriot.css';
 import '../styles/responsive.css';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
@@ -10,7 +10,6 @@ const app = new App({
   button: document.querySelector('#menu-hamburger'),
   drawer: document.querySelector('#navigationDrawer'),
   content: document.querySelector('#mainContent'),
-  // contents: document.querySelector('#content'),
 });
 
 window.addEventListener('hashchange', () => {

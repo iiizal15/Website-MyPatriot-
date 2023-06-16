@@ -1,14 +1,45 @@
-/* main {
-  width: 100%;
-  margin: 32px auto;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-club-list {
-  display: block;
-  margin-top: 32px;
+body {
+  font-family: sans-serif;
+}
+
+main {
   width: 100%;
-  padding: 16px;
-} */
+  margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  padding: 8px;
+  z-index: 99999999999;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+nav {
+  background-color: #b09b71 !important;
+  z-index: 999999;
+}
+.jumbotron {
+  background-color: #eddfb3;
+}
+nav .navbar-brand,
+.nav-item a {
+  color: white;
+}
 
 .wave {
   box-sizing: border-box;
@@ -29,6 +60,7 @@ club-list {
 .search .btn-search {
   border-radius: 0px 50px 50px 0px;
   background-color: #b09b71 !important;
+  cursor: pointer;
 }
 
 .card {
@@ -56,7 +88,7 @@ club-list {
 .wrapper-btn-detail {
   padding-inline: 20px !important;
   width: 100%;
-  bottom: 0 !important;
+  /* bottom: 0 !important; */
   transform: translate(0, -40%) !important;
 }
 .btn-detail {
@@ -93,6 +125,10 @@ club-list {
 
 .detail-description p {
   word-spacing: 0.9px;
+}
+
+footer {
+  background-color: #b09b71;
 }
 
 .skeleton {

@@ -14,12 +14,12 @@ const Contactus = {
   
                     <div class="info">
                         <div class="information">
-                            <img src="./img/gmail.png" class="icon" alt="">
+                            <img src="./img/gmail.png" class="icon mb-3" alt="">
                             <p>mypatriot@gmail.com </p>
                         </div>
   
                         <div class="information">
-                            <img src="./img/handphone.png" class="icon" alt="">
+                            <img src="./img/handphone.png" class="icon mb-3" alt="">
                             <p>0822 - 1234 - 4321 </p>
                         </div>
                     </div>
@@ -32,21 +32,21 @@ const Contactus = {
                 <form action="index.html">
                     <h3 class="title">CONTACT</h3>
   
-                    <div class="input-container">
+                    <div class="input-container mb-3">
                         <label for="name"> Name</label>
-                        <input type="text" name="name" id="name" class="input" required placeholder="Enter your name">  
+                        <input type="text" name="name" id="name" class="input mt-2" required placeholder="Enter your name">  
                     </div>
   
-                    <div class="input-container">
+                    <div class="input-container mb-3">
                     <label for="email"> Email</label>
-                    <input type="email" name="name" id="email" class="input" required placeholder="Enter your email">
+                    <input type="email" name="name" id="email" class="input mt-2" required placeholder="Enter your email">
                   </div>
   
                     <div class="input-container textarea focus" >
                     <label for="message">Message</label>
-                      <textarea name="message" class="input" id="message" required placeholder="Enter your message..."></textarea>
+                      <textarea name="message" class="input mt-2" id="message" required placeholder="Enter your message..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-submit" id="btn-submit">Submit</button>
+                    <button type="submit" class="btn btn-submit mt-2" id="btn-submit">Submit</button>
                 </form>
             </div>
         </div>

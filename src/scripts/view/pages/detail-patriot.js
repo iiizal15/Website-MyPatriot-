@@ -7,7 +7,7 @@ const DetailPatriot = {
   async render() {
     return `
         <div class="container ">
-            <div class="row px-3" id="detail-content">
+            <div class="row px-3 my-3" id="detail-content">
             ${createSkeletonDetailPatriotTemplate(1)}
             </div>
         </div>
