@@ -108,7 +108,7 @@ nav .navbar-brand,
   background-color: #978560;
   color: white;
   border-radius: 20%;
-  display: none; /*default none*/
+  display: none;
   align-items: center;
   justify-content: center;
   opacity: 0.9;

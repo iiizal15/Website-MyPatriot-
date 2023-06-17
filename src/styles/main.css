@@ -67,23 +67,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 15px; */
   box-shadow: 1px 2px 6px 3px rgba(0, 0, 0, 0.04);
-  /* border: 1px solid green; */
   padding: 20px 30px;
 }
 
 .nav-brand img {
   height: auto;
   width: 150px;
-  /* border: 1px solid yellowgreen; */
 }
 .nav-menu {
-  /* border: 1px solid; */
   margin: auto 0 !important;
 }
 .nav-item {
-  /* border: 1px solid red; */
   box-sizing: border-box;
   display: inline-block;
   margin-right: 30px;
@@ -195,7 +190,6 @@ header {
 }
 
 .image-jumbo img {
-  /* margin-left: 80px; */
   min-width: 65%;
   height: auto;
 }
@@ -205,7 +199,7 @@ header {
  */
 
 /*
- * Explore Resto
+ * Explore Container
  */
 
 .explore__container {
@@ -268,7 +262,6 @@ header {
 .article1__image {
   min-width: 200px;
   min-height: 150px;
-  /* justify-content: flex-end; */
 }
 
 .article1__image img {
@@ -310,8 +303,6 @@ header {
 .article2__image {
   min-width: 200px;
   min-height: 150px;
-  /* min-width: 50px;
-  min-height: 50px; */
 }
 
 .article2__image img {
@@ -354,7 +345,6 @@ header {
 .article3__image {
   min-width: 200px;
   min-height: 150px;
-  /* text-align: start; */
 }
 
 .article3__image img {
@@ -631,16 +621,8 @@ textarea.input {
 }
 
 /*
- * footer
+ * About Us Section
  */
-
-footer {
-  text-align: center;
-  width: 100%;
-  background-color: #b09b71;
-  color: #ffffff;
-  padding: 19px 0;
-}
 
 .wave-about {
   box-sizing: border-box;
@@ -679,4 +661,16 @@ footer {
 }
 .team-sosmed a img {
   width: 30px;
+}
+
+/*
+ * Footer Section
+ */
+
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #b09b71;
+  color: #ffffff;
+  padding: 19px 0;
 }
