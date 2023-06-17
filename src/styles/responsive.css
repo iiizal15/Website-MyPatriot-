@@ -406,28 +406,6 @@
   }
 }
 
-/* Responsive Contact Us */
- @media  screen and (min-width: 412px) and (max-width: 675px) {
-  .form {
-    grid-template-columns: 1fr;
-  }
-  .contact-form:before {
-    bottom: initial;
-    top: -75px;
-    right: 65px;
-    transform: scale(0.95);
-  }
-
-  .contact-form:before {
-    top: -13px;
-    left: initial;
-    right: 70px;
-  }
-
-  .text {
-    margin: 1rem 0 1.5rem 0;
-  }
-
-
- }
-
+/*
+ * Responsive Contact Us
+ */
