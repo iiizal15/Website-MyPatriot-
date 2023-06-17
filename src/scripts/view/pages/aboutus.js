@@ -15,7 +15,7 @@ const Aboutus = {
                  <h1 class="text-center fw-bold">Our Team</h1>
                   <div class="d-flex justify-content-center flex-wrap mt-5">
                     <div class="col-sm-12 col-md-5 col-lg-3 mb-3 profile">
-                      <img src="./img/fahrizal.jpg" alt="Fahrizal Amri Bachtiar" class="img-fluid mx-auto img-profile" />
+                      <img src="./img/fahrizal.jpg" alt="Fahrizal Amri Bachtiar" class="img-fluid lazyload mx-auto img-profile" />
                       <h3 class="fs-5 fw-bold text-center mt-2">Fahrizal Amri Bachtiar</h3>
                       <p class="text-center fst-italic" >Student at Dicoding Academy</p>
                       <div class="team-sosmed d-flex justify-content-center align-items-center">
@@ -31,7 +31,7 @@ const Aboutus = {
                       </div>
                     </div>
                     <div class="col-sm-12 col-md-5 col-lg-3 mb-3 profile">
-                      <img src="./img/zaidan.jpg" alt="Ahmad Jourji Zaidan" class="img-fluid mx-auto img-profile" />
+                      <img src="./img/zaidan.jpg" alt="Ahmad Jourji Zaidan" class="img-fluid lazyload mx-auto img-profile" />
                       <h3 class="fs-5 fw-bold text-center mt-2">Ahmad Jourji Zaidan</h3>
                       <p class="text-center fst-italic" >Student at Dicoding Academy</p>
                       <div class="team-sosmed d-flex justify-content-center align-items-center">
@@ -47,7 +47,7 @@ const Aboutus = {
                       </div>
                     </div>
                     <div class="col-sm-12 col-md-5 col-lg-3 mb-3 profile">
-                      <img src="./img/Tegar.png" alt="Tegar Karunia Ilham" class="img-fluid mx-auto img-profile" />
+                      <img src="./img/Tegar.png" alt="Tegar Karunia Ilham" class="img-fluid lazyload mx-auto img-profile" />
                       <h3 class="fs-5 fw-bold text-center mt-2">Tegar Karunia Ilham</h3>
                       <p class="text-center fst-italic" >Student at Dicoding Academy</p>
                       <div class="team-sosmed d-flex justify-content-center align-items-center">
@@ -63,7 +63,7 @@ const Aboutus = {
                       </div>
                     </div>
                     <div class="col-sm-12 col-md-5 col-lg-3 mb-3 profile">
-                      <img src="./img/nurul.jpg" alt="Nurul Prima Annisa" class="img-fluid mx-auto img-profile" />
+                      <img src="./img/nurul.jpg" alt="Nurul Prima Annisa" class="img-fluid lazyload mx-auto img-profile" />
                       <h3 class="fs-5 fw-bold text-center mt-2">Nurul Prima Annisa</h3>
                       <p class="text-center fst-italic" >Student at Dicoding Academy</p>
                       <div class="team-sosmed d-flex justify-content-center align-items-center">
