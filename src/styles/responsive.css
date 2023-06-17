@@ -1,4 +1,7 @@
 @media only screen and (min-width: 1200px) {
+  .nav-brand img{
+    margin-left: 45px;
+  }
   .wave {
     height: 65vh;
     width: 100%;
@@ -34,6 +37,15 @@
     grid-gap: 1.5em;
     margin-top: 1em;
   }
+  /* .profile{
+    width: 400px !important;
+  }
+  .img-profile{
+    width: 50%;
+  } */
+  .about-our-team h1{
+    margin-bottom: 100px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -45,6 +57,7 @@
   .detail-image img {
     width: 300px !important ;
   }
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -141,6 +154,9 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .nav-item{
+    margin: 0;
+  }
   .wave {
     height: 55vh;
     width: 100%;
@@ -192,9 +208,24 @@
     grid-gap: 1.5em;
     margin-top: 1em;
   }
+  .about-description{
+    margin-top: -100px;
+  }
+  .about-our-team{
+    width: 100%;
+  }
+  .profile{
+    margin: 30px 20px;
+  }
+  .img-profile{
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+  .nav-item{
+    margin: 0;
+  }
   .wave {
     height: 50vh;
     width: 100%;
@@ -326,6 +357,25 @@
     font-size: 14px;
     margin-left: 20px;
   }
+
+  .about-description{
+    margin-top: -90px;
+  }
+  .about-description p{
+    font-size: .97rem;
+  }
+
+  .about-our-team{
+    width: 100%;
+    margin: 60px auto !important;
+  }
+  .profile{
+    margin-bottom: 30px;
+  }
+  .img-profile{
+    width: 75%;
+  }
+
 }
 
 /*
