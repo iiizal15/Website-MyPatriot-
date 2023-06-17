@@ -7,7 +7,7 @@ const Aboutus = {
               <div class="about-description">
                 <div class="col-sm-5 col-md-11 col-lg-6 text-center">
                   <h1 class="fs-2 fw-bold">Tentang MyPatriot</h1>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquid repellat deserunt voluptate officiis sequi, consequatur nulla a fuga officia sit, quos nobis hic possimus. Nulla voluptatum iusto earum mollitia.</p>
+                  <p>MyPatriot merupakan sebuah aplikasi berbasis website yang berisikan seputar informasi tentang Pahlawan Nasional Indonesia mulai dari gelar pahlawan hingga jasa-jasa dari pahlawan tersebut.</p>
                 </div>
               </div>
             </div>

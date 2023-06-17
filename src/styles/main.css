@@ -408,15 +408,6 @@ header {
  * Contact Us
  */
 
-/* main {
-  padding: 32px;
-  flex: 1;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-} */
-
 .content {
   margin: 0 auto;
   min-height: 100%;
@@ -425,17 +416,6 @@ header {
 .content .content__heading {
   font-weight: normal;
 }
-
-/* .container {
-  position: relative;
-  width: 100%;
-  padding: 2rem;
-  background-color: white;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .form {
   width: 100%;
@@ -628,12 +608,14 @@ textarea.input {
 }
 
 .contact-info .title {
+  font-weight: bold;
   color: black;
 }
 
 .text {
   color: black;
   margin: 1.5rem 0 2rem 0;
+  text-align: justify;
 }
 
 .information {
@@ -661,8 +643,6 @@ footer {
   padding: 19px 0;
 }
 
-
-
 .wave-about {
   box-sizing: border-box;
   height: 50vh;
@@ -675,7 +655,7 @@ footer {
   object-position: center;
 }
 
-.about-description{
+.about-description {
   position: absolute;
   padding: 15px 30px;
   width: 100%;
@@ -684,20 +664,20 @@ footer {
   top: 40%;
 }
 
-.about-our-team{
+.about-our-team {
   width: 80%;
   margin: 60px auto !important;
 }
-.img-profile{
+.img-profile {
   width: 60%;
 }
-.profile p{
-  font-size: .95rem;
+.profile p {
+  font-size: 0.95rem;
   margin-top: -2px;
 }
-.team-sosmed a{
+.team-sosmed a {
   padding: 10px 12px;
 }
-.team-sosmed a img{
+.team-sosmed a img {
   width: 30px;
 }

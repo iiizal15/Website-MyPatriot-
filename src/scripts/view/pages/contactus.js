@@ -8,16 +8,14 @@ const Contactus = {
             <div class=" d-flex justify-content-center">
             <div class="form">
             <div class="contact-info">
-                <h2 class="title">Get In Touch</h2>
+                <h2 class="title">Let's Talk!</h2>
                 <p class="text">Saran dan masukkan anda sangat berharga bagi kami. Anda dapat
                     mengirim pesan termasuk tampilan website, fitur, dan kendala-kendala yang anda alami.</p>
-  
                     <div class="info">
                         <div class="information">
                             <img src="./img/gmail.png" class="icon mb-3" alt="">
                             <p>mypatriot@gmail.com </p>
                         </div>
-  
                         <div class="information">
                             <img src="./img/handphone.png" class="icon mb-3" alt="">
                             <p>0822 - 1234 - 4321 </p>
@@ -30,7 +28,7 @@ const Contactus = {
                 <span class="circle two"></span>
   
                 <form action="index.html">
-                    <h3 class="title">CONTACT</h3>
+                    <h3 class="title">CONTACT US</h3>
   
                     <div class="input-container mb-3">
                         <label for="name"> Name</label>
