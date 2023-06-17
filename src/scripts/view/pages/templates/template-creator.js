@@ -1,5 +1,4 @@
-const createCardPatriotTemplate = (id, data) => {
-    return `
+const createCardPatriotTemplate = (id, data) => `
     <div class="card col-sm-9 col-md-5 col-lg-3 flex-grow-2 position-relative">
         <div class="card-header text-center border-0 pt-3">
             <h5 class="card-title fw-bold" tabindex="0">${data.nama}</h5>
@@ -26,11 +25,9 @@ const createCardPatriotTemplate = (id, data) => {
                 <a href="#/detail-patriot/${id}" class="btn w-100 btn-detail justify-content-center" tabindex="0" >Detail</a>
             </div>
     </div>
-    `
-}; 
+    `;
 
-const createDetailPatriotTemplate = (data) => {
-    return `
+const createDetailPatriotTemplate = (data) => `
     <div class="col-sm-6 col-md-12 col-lg-12 detail-box rounded-5 py-4">
     <div class="row px-3">
         <div class="d-flex detail-content">
@@ -67,13 +64,12 @@ const createDetailPatriotTemplate = (data) => {
         </div>
     </div>
 </div>
-    `
-}
+    `;
 
 const createSkeletonCardPatriot = (count) => {
-    let template = '';
-    for(let i = 0; i < count; i++){
-        template += `
+  let template = '';
+  for (let i = 0; i < count; i++) {
+    template += `
         <div class="card col-sm-9 col-md-5 col-lg-3 flex-grow-2 position-relative ">
         <div class="card-header text-center border-0 pt-3 ">
             <h5 class="card-title fw-bold skeleton" tabindex="0"> Lorem ipsum dolor sit amet.</h5>
@@ -100,15 +96,15 @@ const createSkeletonCardPatriot = (count) => {
                 <a href="#/detail-patriot/" class="btn w-100 btn-detail justify-content-center" tabindex="0">Detail</a>
             </div>
     </div>
-        `
-}
-    return template;
-}
+        `;
+  }
+  return template;
+};
 
 const createSkeletonDetailPatriotTemplate = (count) => {
-    let template = '';
-    for(let i = 0; i < count; i++){
-        template += `
+  let template = '';
+  for (let i = 0; i < count; i++) {
+    template += `
         <div class="col-sm-6 col-md-12 col-lg-12 detail-box rounded-5 p-4">
         <div class="row p-3">
             <div class="d-flex px-3 justify-content-center detail-content">
@@ -145,16 +141,15 @@ const createSkeletonDetailPatriotTemplate = (count) => {
             </div>
         </div>
     </div>
-        `
-    }
+        `;
+  }
 
-    return template;
-}
+  return template;
+};
 
-
-export{ 
-    createCardPatriotTemplate,
-    createDetailPatriotTemplate,
-    createSkeletonCardPatriot,
-    createSkeletonDetailPatriotTemplate
+export {
+  createCardPatriotTemplate,
+  createDetailPatriotTemplate,
+  createSkeletonCardPatriot,
+  createSkeletonDetailPatriotTemplate,
 };

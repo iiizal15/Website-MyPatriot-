@@ -12,7 +12,6 @@ const ContactUsHandler = async () => {
   };
   if (data.name === '' || data.email === '' || data.message === '') {
     alert('Formulir tidak boleh kosong');
-    return;
   } else {
     await MyPatriotIdbSource.ContactUsPost(data);
     alert('Pesan Berhasil dikirim');

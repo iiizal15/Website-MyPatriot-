@@ -1,4 +1,4 @@
-const createCardPatriotTemplate = (id, data) =>  `
+const createCardPatriotTemplate = (id, data) => `
     <div class="card col-sm-9 col-md-5 col-lg-3 flex-grow-2 position-relative">
         <div class="card-header text-center border-0 pt-3">
             <h5 class="card-title fw-bold" tabindex="0">${data.nama}</h5>
